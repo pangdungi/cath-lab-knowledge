@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-label="AVRT Ïƒ ‹">
+  <rect width="900" height="320" fill="#fafafa"/>
+  <text x="24" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AVRT (Orthodromic) - Ïƒ ‹</text>
+  <text x="24" y="54" font-family="Arial, sans-serif" font-size="13" fill="#64748b">‹Yx Å@ QRS HÂ (Regular narrow-complex tachycardia)</text>
+
+  <!-- grid -->
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="24" y1="80" x2="876" y2="80"/>
+    <line x1="24" y1="110" x2="876" y2="110"/>
+    <line x1="24" y1="140" x2="876" y2="140"/>
+    <line x1="24" y1="170" x2="876" y2="170"/>
+    <line x1="24" y1="200" x2="876" y2="200"/>
+    <line x1="24" y1="230" x2="876" y2="230"/>
+    <line x1="24" y1="260" x2="876" y2="260"/>
+  </g>
+
+  <!-- baseline -->
+  <line x1="24" y1="200" x2="876" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- ECG waveform: regular narrow QRS tachycardia -->
+  <polyline
+    fill="none"
+    stroke="#0f766e"
+    stroke-width="3"
+    stroke-linejoin="round"
+    points="24,200 40,200 48,170 56,230 64,120 72,240 80,200 96,200 104,168 112,232 120,118 128,242 136,200 152,200 160,170 168,230 176,120 184,240 192,200 208,200 216,168 224,232 232,118 240,242 248,200 264,200 272,170 280,230 288,120 296,240 304,200 320,200 328,168 336,232 344,118 352,242 360,200 376,200 384,170 392,230 400,120 408,240 416,200 432,200 440,168 448,232 456,118 464,242 472,200 488,200 496,170 504,230 512,120 520,240 528,200 544,200 552,168 560,232 568,118 576,242 584,200 600,200 608,170 616,230 624,120 632,240 640,200 656,200 664,168 672,232 680,118 688,242 696,200 712,200 720,170 728,230 736,120 744,240 752,200 768,200 776,168 784,232 792,118 800,242 808,200 824,200 832,170 840,230 848,120 856,240 864,200"
+  />
+
+  <!-- labels -->
+  <text x="120" y="285" font-family="Arial, sans-serif" font-size="12" fill="#334155">PR: Ùµ ¡ î ÁL</text>
+  <text x="360" y="285" font-family="Arial, sans-serif" font-size="12" fill="#334155">QRS: ÅL (narrow)</text>
+  <text x="600" y="285" font-family="Arial, sans-serif" font-size="12" fill="#334155">¨Ï: ‹Y HÂ</text>
+
+  <!-- arrow markers -->
+  <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">P</text>
+  <text x="128" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">QRS</text>
+</svg>
