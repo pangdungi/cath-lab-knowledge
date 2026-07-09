@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-label="Heart valves overview">
+  <rect width="1000" height="560" fill="#f8fafc"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Heart Valves Overview (4 valves)</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Atrioventricular (AV) valves vs Semilunar valves — location and blood flow</text>
+
+  <!-- Heart simplified -->
+  <path d="M500 90 C420 90 350 130 320 200 C300 270 320 350 380 410 C430 450 470 470 500 480 C530 470 570 450 620 410 C680 350 700 270 680 200 C650 130 580 90 500 90 Z" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+
+  <!-- Chambers -->
+  <text x="395" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">RA</text>
+  <text x="395" y="190" font-family="Arial, sans-serif" font-size="10" fill="#991b1b">Right Atrium</text>
+  <text x="545" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">LA</text>
+  <text x="545" y="190" font-family="Arial, sans-serif" font-size="10" fill="#991b1b">Left Atrium</text>
+  <text x="385" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">RV</text>
+  <text x="385" y="345" font-family="Arial, sans-serif" font-size="10" fill="#991b1b">Right Ventricle</text>
+  <text x="545" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">LV</text>
+  <text x="545" y="345" font-family="Arial, sans-serif" font-size="10" fill="#991b1b">Left Ventricle</text>
+
+  <!-- Valves -->
+  <ellipse cx="430" cy="250" rx="34" ry="10" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  <text x="350" y="254" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0369a1">Tricuspid</text>
+  <text x="350" y="270" font-family="Arial, sans-serif" font-size="10" fill="#475569">3 leaflets · RA→RV</text>
+
+  <ellipse cx="570" cy="250" rx="34" ry="10" fill="#0ea5e9" stroke="#0369a1" stroke-width="2"/>
+  <text x="610" y="248" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0369a1">Mitral</text>
+  <text x="610" y="264" font-family="Arial, sans-serif" font-size="10" fill="#475569">2 leaflets · LA→LV</text>
+
+  <ellipse cx="455" cy="120" rx="22" ry="8" fill="#a855f7" stroke="#7e22ce" stroke-width="2"/>
+  <text x="300" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7e22ce">Pulmonary</text>
+  <text x="300" y="131" font-family="Arial, sans-serif" font-size="10" fill="#475569">3 cusps · RV→PA</text>
+
+  <ellipse cx="545" cy="120" rx="22" ry="8" fill="#a855f7" stroke="#7e22ce" stroke-width="2"/>
+  <text x="610" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7e22ce">Aortic</text>
+  <text x="610" y="131" font-family="Arial, sans-serif" font-size="10" fill="#475569">3 cusps · LV→Aorta</text>
+
+  <!-- Flow arrows -->
+  <path d="M430 210 L430 235" stroke="#2563eb" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M570 210 L570 235" stroke="#dc2626" stroke-width="3"/>
+  <path d="M430 360 L430 300" stroke="#2563eb" stroke-width="3"/>
+  <path d="M570 360 L570 300" stroke="#dc2626" stroke-width="3"/>
+
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/></marker></defs>
+
+  <!-- Legend boxes -->
+  <rect x="24" y="400" width="450" height="140" rx="10" fill="#e0f2fe" stroke="#7dd3fc"/>
+  <text x="44" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0369a1">AV valves (방실판)</text>
+  <text x="44" y="450" font-family="Arial, sans-serif" font-size="11" fill="#334155">Mitral (승모판) · Tricuspid (삼첨판)</text>
+  <text x="44" y="470" font-family="Arial, sans-serif" font-size="11" fill="#334155">심방→심실 사이 · 잎(leaflet) + chordae · 역류 = MR / TR</text>
+  <text x="44" y="490" font-family="Arial, sans-serif" font-size="11" fill="#334155">조영실 연결: TAVR(대동맥) · TMVR/MitraClip(승모) · TTVR/TEER(삼첨)</text>
+  <text x="44" y="515" font-family="Arial, sans-serif" font-size="11" fill="#64748b">TEE로 AV 판막 평가가 매우 중요</text>
+
+  <rect x="500" y="400" width="476" height="140" rx="10" fill="#f3e8ff" stroke="#d8b4fe"/>
+  <text x="520" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#7e22ce">Semilunar valves (반월판)</text>
+  <text x="520" y="450" font-family="Arial, sans-serif" font-size="11" fill="#334155">Aortic (대동맥판) · Pulmonary (폐동맥판)</text>
+  <text x="520" y="470" font-family="Arial, sans-serif" font-size="11" fill="#334155">심실→대동맥/폐동맥 · 3개 판(cusp) · 역류 = AR / PR</text>
+  <text x="520" y="490" font-family="Arial, sans-serif" font-size="11" fill="#334155">협착 = AS / PS · TAVR는 대동맥판(semilunar) 치환</text>
+  <text x="520" y="515" font-family="Arial, sans-serif" font-size="11" fill="#64748b">심초음파: valve area, gradient, regurgitation grade</text>
+</svg>

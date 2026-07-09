@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" role="img" aria-label="WPW ECG delta wave">
+  <rect width="920" height="400" fill="#fafafa"/>
+  <text x="24" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">WPW Pattern on ECG (sinus rhythm)</text>
+  <text x="24" y="54" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Short PR + delta wave + slightly wide QRS</text>
+
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="24" y1="90" x2="896" y2="90"/>
+    <line x1="24" y1="120" x2="896" y2="120"/>
+    <line x1="24" y1="150" x2="896" y2="150"/>
+    <line x1="24" y1="180" x2="896" y2="180"/>
+    <line x1="24" y1="210" x2="896" y2="210"/>
+    <line x1="24" y1="240" x2="896" y2="240"/>
+    <line x1="24" y1="270" x2="896" y2="270"/>
+  </g>
+  <line x1="24" y1="210" x2="896" y2="210" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Normal beat (left) for comparison - faint -->
+  <polyline fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round"
+    points="40,210 70,210 82,188 90,232 98,118 106,242 114,210 150,210 158,188 166,232 174,118 182,242 190,210"/>
+
+  <text x="40" y="78" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Normal (reference)</text>
+
+  <!-- WPW beats - slurred delta upstroke, wider QRS -->
+  <polyline fill="none" stroke="#0f766e" stroke-width="3.5" stroke-linejoin="round"
+    points="220,210 248,210 256,188 268,205 276,200 284,198 292,200 300,232 308,118 318,245 328,210 360,210 368,188 380,205 388,200 396,198 404,200 412,232 420,118 430,245 440,210 500,210 508,188 520,205 528,200 536,198 544,200 552,232 560,118 570,245 580,210 640,210 648,188 660,205 668,200 676,198 684,200 692,232 700,118 710,245 720,210 780,210 788,188 800,205 808,200 816,198 824,200 832,232 840,118 850,245 860,210"/>
+
+  <!-- PR short bracket -->
+  <line x1="256" y1="300" x2="268" y2="300" stroke="#2563eb" stroke-width="2"/>
+  <text x="230" y="318" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Short PR</text>
+
+  <!-- Delta wave highlight -->
+  <path d="M268 205 Q276 198 292 200" fill="none" stroke="#ea580c" stroke-width="5" stroke-linecap="round"/>
+  <rect x="270" y="130" width="52" height="22" rx="4" fill="#ffedd5" stroke="#fb923c"/>
+  <text x="278" y="145" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#c2410c">delta</text>
+  <line x1="292" y1="152" x2="280" y2="198" stroke="#ea580c" stroke-width="1.5"/>
+
+  <!-- Wide QRS bracket -->
+  <line x1="268" y1="330" x2="318" y2="330" stroke="#7c3aed" stroke-width="2"/>
+  <text x="270" y="348" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#6d28d9">Wide QRS</text>
+
+  <text x="360" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">P</text>
+  <text x="308" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">QRS</text>
+
+  <rect x="24" y="360" width="872" height="32" rx="8" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text x="40" y="381" font-family="Arial, sans-serif" font-size="11" fill="#0e7490">Triad: PR &lt; 120 ms · slurred upstroke (delta) · QRS &gt; 120 ms (pre-excitation)</text>
+</svg>

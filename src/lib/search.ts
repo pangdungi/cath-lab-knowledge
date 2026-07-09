@@ -1,5 +1,6 @@
 import { cardiovascularAnatomy } from "@/data/cardiovascular-anatomy";
 import { cardiovascularDiseases } from "@/data/cardiovascular-diseases";
+import { emergencyNursingTopics } from "@/data/emergency-nursing-topics";
 import { epTopics } from "@/data/ep-topics";
 import { medicalTerms } from "@/data/medical-terms";
 import { medications } from "@/data/medications";
@@ -128,6 +129,14 @@ function buildSearchIndex(): IndexedItem[] {
     ),
     ...nursingTopics.map((item) =>
       articleToSearchItem(item, "nursing", "간호", "/nursing"),
+    ),
+    ...emergencyNursingTopics.map((item) =>
+      articleToSearchItem(
+        item,
+        "emergency-nursing",
+        "응급간호",
+        "/emergency-nursing",
+      ),
     ),
   ];
 }

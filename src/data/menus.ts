@@ -80,4 +80,12 @@ export const menus: MenuItem[] = [
     icon: "🩹",
     available: true,
   },
+  {
+    id: "emergency-nursing",
+    label: "응급간호",
+    description: "ACLS, 심정지·코드 블루 등 응급 상황 대응을 정리합니다.",
+    href: "/emergency-nursing",
+    icon: "🚨",
+    available: true,
+  },
 ];
