@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-label="CABG graft harvest and attachment sites">
+  <rect width="960" height="620" fill="#f8fafc"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">CABG: Where to Harvest / Where to Attach</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Orange = harvest (take) | Green = attach (anastomosis)</text>
+
+  <rect x="24" y="72" width="912" height="36" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <circle cx="48" cy="90" r="7" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <text x="62" y="95" font-family="Arial, sans-serif" font-size="11" fill="#9a3412">Harvest / take from body</text>
+  <circle cx="300" cy="90" r="7" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <text x="314" y="95" font-family="Arial, sans-serif" font-size="11" fill="#15803d">Attach to coronary artery</text>
+  <circle cx="560" cy="90" r="7" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+  <text x="574" y="95" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8">SVG proximal = ascending aorta</text>
+
+  <rect x="24" y="120" width="912" height="150" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="44" y="148" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">1. LITA / LIMA - in-situ</text>
+  <rect x="80" y="170" width="22" height="80" rx="4" fill="#cbd5e1" stroke="#64748b"/>
+  <ellipse cx="180" cy="210" rx="55" ry="65" fill="#f1f5f9" stroke="#94a3b8"/>
+  <path d="M100 185 C115 195 130 210 145 225" fill="none" stroke="#334155" stroke-width="4"/>
+  <text x="60" y="178" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#334155">Subclavian</text>
+  <path d="M102 195 C120 205 135 220 150 235" fill="none" stroke="#0d9488" stroke-width="5"/>
+  <path d="M165 175 C175 195 185 215 195 235" fill="none" stroke="#991b1b" stroke-width="4"/>
+  <path d="M150 235 C165 228 178 218 188 210" fill="none" stroke="#0d9488" stroke-width="5"/>
+  <circle cx="188" cy="210" r="7" fill="#fef08a" stroke="#ca8a04"/>
+  <rect x="290" y="165" width="200" height="68" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="304" y="186" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#c2410c">HARVEST (not fully removed)</text>
+  <text x="304" y="204" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Subclavian to sternum - stays in place</text>
+  <text x="304" y="220" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Only distal end is freed</text>
+  <rect x="510" y="165" width="210" height="68" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="524" y="186" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">ATTACH</text>
+  <text x="524" y="204" font-family="Arial, sans-serif" font-size="10" fill="#166534">Distal LITA to LAD beyond stenosis</text>
+  <text x="524" y="220" font-family="Arial, sans-serif" font-size="10" fill="#166534">Proximal stays on subclavian</text>
+
+  <rect x="24" y="285" width="912" height="150" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="44" y="313" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6d28d9">2. Radial artery - free graft</text>
+  <rect x="70" y="335" width="70" height="80" rx="25" fill="#ede9fe" stroke="#8b5cf6"/>
+  <path d="M105 345 C103 375 101 400 99 405" fill="none" stroke="#7c3aed" stroke-width="6"/>
+  <rect x="88" y="338" width="34" height="18" rx="4" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <text x="92" y="351" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#c2410c">TAKE</text>
+  <ellipse cx="280" cy="375" rx="45" ry="55" fill="#fff1f2" stroke="#fda4af"/>
+  <path d="M300 340 C320 350 335 365 340 380" fill="none" stroke="#be123c" stroke-width="4"/>
+  <path d="M120 380 L340 375" fill="none" stroke="#7c3aed" stroke-width="4" stroke-dasharray="6 3"/>
+  <rect x="195" y="348" width="50" height="18" rx="4" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+  <text x="202" y="361" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#1d4ed8">Aorta</text>
+  <rect x="400" y="330" width="210" height="88" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="414" y="352" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#c2410c">HARVEST</text>
+  <text x="414" y="370" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Entire forearm radial artery</text>
+  <text x="414" y="386" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Allen test required</text>
+  <rect x="630" y="330" width="280" height="88" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="644" y="352" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">ATTACH</text>
+  <text x="644" y="370" font-family="Arial, sans-serif" font-size="10" fill="#166534">Proximal to ascending aorta</text>
+  <text x="644" y="386" font-family="Arial, sans-serif" font-size="10" fill="#166534">Distal to OM, diagonal, PDA</text>
+
+  <rect x="24" y="450" width="912" height="150" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="44" y="478" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1d4ed8">3. SVG (saphenous vein) - free graft</text>
+  <rect x="85" y="500" width="55" height="85" rx="18" fill="#dbeafe" stroke="#3b82f6"/>
+  <path d="M112 510 C110 545 108 575 106 575" fill="none" stroke="#2563eb" stroke-width="6"/>
+  <rect x="95" y="505" width="34" height="18" rx="4" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <text x="99" y="518" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#c2410c">TAKE</text>
+  <ellipse cx="300" cy="545" rx="50" ry="40" fill="#fff1f2" stroke="#fda4af"/>
+  <path d="M285 530 L315 530" fill="none" stroke="#334155" stroke-width="5"/>
+  <rect x="288" y="512" width="44" height="18" rx="4" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+  <text x="293" y="525" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#1d4ed8">Proximal</text>
+  <path d="M315 540 C360 535 400 530 430 545" fill="none" stroke="#2563eb" stroke-width="5" stroke-dasharray="8 4"/>
+  <path d="M430 545 C445 555 455 565 460 570" fill="none" stroke="#7f1d1d" stroke-width="4"/>
+  <rect x="448" y="572" width="44" height="18" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <text x="452" y="585" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#15803d">Distal</text>
+  <rect x="520" y="495" width="200" height="88" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="534" y="517" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#c2410c">HARVEST</text>
+  <text x="534" y="535" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Greater saphenous vein</text>
+  <text x="534" y="551" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">Medial leg (thigh/calf)</text>
+  <rect x="740" y="495" width="180" height="88" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="754" y="517" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">ATTACH</text>
+  <text x="754" y="535" font-family="Arial, sans-serif" font-size="10" fill="#166534">Proximal: aortic punch</text>
+  <text x="754" y="551" font-family="Arial, sans-serif" font-size="10" fill="#166534">Distal: RCA, OM, PDA</text>
+</svg>

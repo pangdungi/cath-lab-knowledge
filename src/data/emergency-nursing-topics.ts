@@ -63,6 +63,69 @@ export const emergencyNursingTopics: KnowledgeArticle[] = [
     ],
     tags: ["응급간호", "ACLS", "심정지", "CPR", "제세동", "코드블루"],
   },
+  {
+    slug: "vasovagal-response",
+    title: "Vasovagal 반응 대응",
+    englishName: "Vasovagal Syncope Response",
+    koreanName: "혈관성(신경매개성) 실신 — 사인·혈압·맥박 변화 시 간호",
+    summary:
+      "어지럼·창백·BP↓·서맥 등 vasovagal 사인 나타나면 즉시 눕히기·다리 올리기·모니터·의식·부상 예방 — 심정지와 구분",
+    summaryEn:
+      "When vasovagal signs appear — dizziness, pallor, falling BP, bradycardia — lay the patient down, raise legs, monitor, protect from injury, and distinguish from cardiac arrest.",
+    definition: [
+      "**Vasovagal syncope(혈관성·신경매개성 실신)** 은 갑작스러운 **미주신경 항진**으로 혈관이 확장되고 심박이 느려지면서 **혈압·뇌혈류가 떨어져** 잠깐 의식을 잃는 반응입니다. 조영실·회복실·경사대 검사·혈관 puncture 후 흔합니다.",
+      "**심정지와 다릅니다.** Vasovagal은 대개 **맥박이 있음**(서맥이어도 촉지 가능), **짧게 회복**되며, **눕히면 빨리 호전**됩니다. 다만 **낙상·머리 부상**이 가장 큰 위험입니다.",
+      "간호사가 **먼저 볼 것**: 환자 말·얼굴색·땀·오심 → **BP·HR·ECG·SpO₂** 추세 → **의식 수준**. 사인이 보이면 **기다리지 말고** 아래 순서를 시작합니다.",
+      "한마디로, **'BP↓ + 서맥 + 어지럼/실신 직전 → 즉시 supine·다리 올리기·모니터·기록·의사 보고'** 입니다.",
+    ],
+    measurementSteps: [
+      "【Vasovagal 사인 — 환자·관찰】 **어지럼·먹먹함·시야 흐림** · **오심·구역** · **창백·창백 + 땀(cold sweat)** · **약함·'쓰러질 것 같다'** · **실제 실신·눈 깜빡임·반응 저하**",
+      "【Vasovagal 사인 — 혈압·맥박·ECG】 **혈압 저하**: SBP **<90 mmHg** 또는 기준 대비 **≥20~40 mmHg 급락** · **서맥**: HR **<50 bpm** 또는 급격히 감소(일부는 상대적 서맥) · **ECG**: **sinus bradycardia**, 일시 **일시방지·짧은 pause** 가능 · **SpO₂**: 보통 유지(저산소 아닌 경우 많음)",
+      "【1단계 — 즉시 (0~10초)】 ① 큰 소리로 **'괜찮으세요?'** ② **눕힘(supine)** — 경사대면 **즉시 수평 복귀**, 의자면 **뒤로 눕히기** ③ **다리 올리기(Trendelenburg/legs up)** — 뇌혈류 회복 ④ **낙상 방지** — 떨어지기 전에 잡거나 옆에 눕힘",
+      "【2단계 — 모니터·확인 (10~60초)】 ① **BP·HR·ECG·SpO₂** 연속 ② **맥박 유무** 촉지(없으면 **심정지 프로토콜**) ③ **의식** — A&O, GCS ④ **접근 부위·sheath** 출혈·혈종 동시 확인(조영실) ⑤ **의사·팀 호출**",
+      "【3단계 — 증상 지속·심할 때】 ① **산소** 2~6 L/min (필요 시) ② **수액** NS 500 mL bolus(저혈압 지속·의사 지시) ③ **아트로핀** 0.5~1 mg IV(지속 서맥·의사 처방) ④ **조영 중단** · 약물(니트로·도파민 drip 등) 재평가 ⑤ **심정지 팀** 대기",
+      "【4단계 — 회복 후】 ① supine 유지 **최소 10~15분**, BP·증상 안정까지 ② **갑자기 기립 금지** ③ **수분·간식**(금식 아닐 때) ④ **재발 증상** 모니터 ⑤ **시간·BP·HR·증상·처치** 정확히 기록",
+      "【심정지 vs Vasovagal 구분】 Vasovagal: **맥박 있음** + 눕히면 **호전** + **짧은 의식저하** / 심정지: **반응 없음 + 맥박 없음** → **코드 블루·CPR**. 애매하면 **맥박 확인 후** CPR 시작(가능성 낮아도 무응답·무맥박이면 ACLS).",
+      "【조영실·Cath Lab 특이점】 **Vasovagal** 유발 요인: 통증, 공포, **sheath insertion/removal**, **조영제 반응**, **빈뇨·복부 압박**, **장시간 누움 후 기립**. Sheath 제거 시 **가장 흔함** → 제거 전 수액·불안 완화, 제거 중·후 BP 모니터.",
+      "【하지 말아야 할 것】 환자를 **일으켜 세우기** · **혼자 걸어가게 하기** · **무시하고 '금방 괜찮아져요'만 말하기** · 맥박 확인 없이 그냥 퇴실 · 실신 후 **즉시 퇴원**",
+    ],
+    stepsTitle: "사인별 대응",
+    stepsSubtitle: "혈압·맥박 변화 시 해야 할 것",
+    clinicalUse:
+      "조영실 회복실·경사대 검사·혈액검사실에서 가장 흔한 응급 상황 중 하나입니다. ACLS(심정지)와 달리 **대부분 눕히면 회복**되지만, **낙상·두부외상**이 치명적일 수 있습니다. 간호사는 '어지럽다'는 한마디부터 BP·HR을 잡고, sheath 제거·tilt 검사·조영 직후 고위험 구간을 알아 두어야 합니다. 지속 저혈압·반복 실신·흉통·부정맥이 동반되면 단순 vasovagal이 아닐 수 있어 의사 평가가 필요합니다.",
+    nursingCare: {
+      pre: [
+        "고위험 환자 인지: 공포·통증·금식·탈수·이전 실신 병력",
+        "sheath 제거·tilt·조영 전 BP baseline 기록",
+        "침대/경사대 안전벨트·낙상 방지 준비",
+        "산소·수액·응급카트 접근 가능 위치",
+        "팀에 '어지럼 호소 시 즉시 알리기' 규칙 공유",
+      ],
+      post: [
+        "실신/ presyncope 발생 시각·BP·HR·ECG·SpO₂ 기록",
+        "supine·다리 올린 시간·회복 시각 기록",
+        "투여(수액·아트로핀·산소) 기록",
+        "낙상·외상 여부 확인·보고",
+        "안정 후에도 기립 시 재어지럼 교육·동반 하기",
+      ],
+    },
+    keyPoints: [
+      "사인: 어지럼·창백·땀·오심 + BP↓ + 서맥",
+      "즉시: supine + 다리 올리기 + 모니터",
+      "맥박 있으면 vasovagal, 없으면 심정지",
+      "조영실: sheath 제거·조영 후 최고 위험",
+      "회복 후 갑자기 일으키지 않기",
+      "시간·BP·HR·처치 정확히 기록",
+    ],
+    relatedItems: [
+      "Tilt-Table Test",
+      "Syncope",
+      "Vasovagal Syncope",
+      "ACLS",
+      "Orthostatic Hypotension",
+    ],
+    tags: ["응급간호", "vasovagal", "실신", "혈압", "서맥", "조영실"],
+  },
 ];
 
 export function getEmergencyNursingTopicBySlug(

@@ -1,3 +1,4 @@
+import { FormattedText } from "@/components/FormattedText";
 import type { KnowledgeArticle } from "@/types/knowledge-article";
 
 type KnowledgeArticleDetailProps = {
@@ -41,7 +42,7 @@ export function KnowledgeArticleDetail({
         </h2>
         <div className="space-y-3">
           <p className="rounded-lg bg-slate-50 px-4 py-3 text-base leading-7 text-slate-800">
-            {article.summary}
+            <FormattedText>{article.summary}</FormattedText>
           </p>
           <p className="rounded-lg border border-teal-100 bg-teal-50 px-4 py-3 text-base leading-7 text-teal-900">
             <span className="mr-2 text-xs font-semibold uppercase tracking-wide text-teal-600">
@@ -61,7 +62,7 @@ export function KnowledgeArticleDetail({
               key={paragraph}
               className="text-base leading-7 text-slate-700"
             >
-              {paragraph}
+              <FormattedText>{paragraph}</FormattedText>
             </p>
           ))}
         </div>
@@ -88,7 +89,7 @@ export function KnowledgeArticleDetail({
                 />
                 {image.caption && (
                   <figcaption className="border-t border-slate-100 px-4 py-3 text-sm leading-6 text-slate-600">
-                    {image.caption}
+                    <FormattedText>{image.caption}</FormattedText>
                   </figcaption>
                 )}
               </figure>
@@ -115,7 +116,7 @@ export function KnowledgeArticleDetail({
                   {index + 1}
                 </span>
                 <p className="pt-1 text-base leading-7 text-slate-700">
-                  {step}
+                  <FormattedText>{step}</FormattedText>
                 </p>
               </li>
             ))}
@@ -143,7 +144,9 @@ export function KnowledgeArticleDetail({
                     className="flex gap-2 text-sm leading-6 text-amber-950"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600" />
-                    <span>{item}</span>
+                    <span>
+                      <FormattedText>{item}</FormattedText>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -159,7 +162,9 @@ export function KnowledgeArticleDetail({
                     className="flex gap-2 text-sm leading-6 text-teal-950"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
-                    <span>{item}</span>
+                    <span>
+                      <FormattedText>{item}</FormattedText>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -172,7 +177,9 @@ export function KnowledgeArticleDetail({
         <h2 className="mb-3 text-lg font-semibold text-slate-900">
           임상적 활용
         </h2>
-        <p className="leading-7 text-slate-700">{article.clinicalUse}</p>
+        <p className="leading-7 text-slate-700">
+          <FormattedText>{article.clinicalUse}</FormattedText>
+        </p>
       </section>
 
       <section className="mb-8">
@@ -186,7 +193,9 @@ export function KnowledgeArticleDetail({
               className="flex gap-3 text-sm leading-6 text-slate-700"
             >
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
-              <span>{point}</span>
+              <span>
+                <FormattedText>{point}</FormattedText>
+              </span>
             </li>
           ))}
         </ul>

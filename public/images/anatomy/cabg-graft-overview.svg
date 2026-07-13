@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="CABG graft overview">
+  <rect width="960" height="520" fill="#f8fafc"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">CABG Graft Overview</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Arterial and venous conduits bypassing obstructed coronary arteries</text>
+
+  <rect x="120" y="90" width="36" height="280" rx="6" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <text x="108" y="395" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Sternum</text>
+  <ellipse cx="280" cy="250" rx="110" ry="130" fill="#fff1f2" stroke="#fda4af" stroke-width="2"/>
+  <text x="248" y="245" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#be123c">Heart</text>
+  <path d="M250 150 C270 170 285 210 290 260" fill="none" stroke="#991b1b" stroke-width="5" stroke-linecap="round"/>
+  <text x="292" y="175" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#991b1b">LAD</text>
+  <path d="M300 160 C340 175 360 210 355 250" fill="none" stroke="#be123c" stroke-width="4" stroke-linecap="round"/>
+  <text x="360" y="200" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#be123c">LCX</text>
+  <path d="M320 280 C360 300 380 330 370 360" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round"/>
+  <text x="372" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7f1d1d">RCA</text>
+  <circle cx="278" cy="205" r="10" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <text x="248" y="198" font-family="Arial, sans-serif" font-size="9" fill="#854d0e">stenosis</text>
+
+  <path d="M156 120 C170 140 200 160 240 175" fill="none" stroke="#0d9488" stroke-width="6" stroke-linecap="round"/>
+  <path d="M240 175 C255 185 268 195 278 205" fill="none" stroke="#0d9488" stroke-width="6" stroke-linecap="round"/>
+  <text x="40" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">LITA (LIMA)</text>
+  <text x="40" y="132" font-family="Arial, sans-serif" font-size="10" fill="#115e59">Subclavian to sternum to LAD</text>
+
+  <path d="M500 420 C440 380 380 320 340 280" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 4"/>
+  <rect x="480" y="400" width="80" height="90" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="492" y="450" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Leg SVG</text>
+  <text x="500" y="505" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">Saphenous vein to RCA / OM</text>
+
+  <path d="M720 120 C640 150 520 200 360 230" fill="none" stroke="#7c3aed" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 3"/>
+  <rect x="700" y="90" width="90" height="50" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="718" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#6d28d9">Forearm</text>
+  <text x="720" y="72" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#6d28d9">Radial artery</text>
+  <text x="720" y="88" font-family="Arial, sans-serif" font-size="10" fill="#5b21b6">to LCX / OM branch</text>
+
+  <rect x="520" y="90" width="400" height="280" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="540" y="120" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Graft types</text>
+  <line x1="540" y1="145" x2="580" y2="145" stroke="#0d9488" stroke-width="6" stroke-linecap="round"/>
+  <text x="592" y="150" font-family="Arial, sans-serif" font-size="12" fill="#334155">LITA/RITA in-situ - best patency</text>
+  <line x1="540" y1="180" x2="580" y2="180" stroke="#7c3aed" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 3"/>
+  <text x="592" y="185" font-family="Arial, sans-serif" font-size="12" fill="#334155">Radial free graft - Allen test</text>
+  <line x1="540" y1="215" x2="580" y2="215" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 4"/>
+  <text x="592" y="220" font-family="Arial, sans-serif" font-size="12" fill="#334155">SVG venous graft - versatile</text>
+  <text x="540" y="255" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Typical targets</text>
+  <text x="540" y="278" font-family="Arial, sans-serif" font-size="11" fill="#475569">LITA to LAD (gold standard)</text>
+  <text x="540" y="298" font-family="Arial, sans-serif" font-size="11" fill="#475569">SVG / Radial to RCA, OM, PDA</text>
+  <text x="540" y="318" font-family="Arial, sans-serif" font-size="11" fill="#475569">RITA to RCA or lateral wall</text>
+</svg>

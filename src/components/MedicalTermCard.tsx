@@ -1,3 +1,4 @@
+import { FormattedText } from "@/components/FormattedText";
 import Link from "next/link";
 import type { MedicalTerm } from "@/types/medical-term";
 
@@ -21,7 +22,9 @@ export function MedicalTermCard({ term }: MedicalTermCardProps) {
         </span>
       </div>
 
-      <p className="mb-4 text-sm leading-6 text-slate-700">{term.summary}</p>
+      <p className="mb-4 text-sm leading-6 text-slate-700">
+        <FormattedText>{term.summary}</FormattedText>
+      </p>
 
       <div className="flex flex-wrap gap-2">
         {term.tags.map((tag) => (

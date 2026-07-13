@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Coronary stenosis by vessel on angiography">
+  <rect width="960" height="520" fill="#0b1020"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">Coronary Stenosis by Vessel</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8">Red dashed ring = stenosis site on angiogram</text>
+  <rect x="24" y="80" width="290" height="200" rx="10" fill="#111827" stroke="#374151"/>
+  <text x="44" y="108" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fbbf24">LM stenosis</text>
+  <path d="M100 170 L180 170" fill="none" stroke="#f9fafb" stroke-width="10" stroke-linecap="round"/>
+  <path d="M130 170 L150 170" fill="none" stroke="#4b5563" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="140" cy="170" rx="16" ry="11" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <path d="M180 170 C200 175 210 190 215 210" fill="none" stroke="#f9fafb" stroke-width="7"/>
+  <path d="M180 170 C160 190 150 220 148 250" fill="none" stroke="#f9fafb" stroke-width="7"/>
+  <text x="44" y="255" font-family="Arial, sans-serif" font-size="10" fill="#fca5a5">Left main = high risk</text>
+  <rect x="335" y="80" width="290" height="200" rx="10" fill="#111827" stroke="#374151"/>
+  <text x="355" y="108" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#38bdf8">LCX / OM stenosis</text>
+  <path d="M420 170 L500 170" fill="none" stroke="#f9fafb" stroke-width="9"/>
+  <path d="M500 170 C450 190 400 210 370 230" fill="none" stroke="#f9fafb" stroke-width="8"/>
+  <path d="M430 205 C410 240 395 260 380 270" fill="none" stroke="#f9fafb" stroke-width="7"/>
+  <ellipse cx="400" cy="240" rx="14" ry="10" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="355" y="255" font-family="Arial, sans-serif" font-size="10" fill="#fca5a5">OM1 stenosis here</text>
+  <rect x="646" y="80" width="290" height="200" rx="10" fill="#111827" stroke="#374151"/>
+  <text x="666" y="108" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#38bdf8">RCA stenosis (RAO)</text>
+  <path d="M760 150 C800 170 820 210 815 250 C808 280 785 300 760 310" fill="none" stroke="#f9fafb" stroke-width="10"/>
+  <ellipse cx="795" cy="200" rx="14" ry="10" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="666" y="255" font-family="Arial, sans-serif" font-size="10" fill="#fca5a5">mRCA stenosis</text>
+  <rect x="24" y="300" width="912" height="200" rx="10" fill="#111827" stroke="#374151"/>
+  <text x="44" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">LAD stenosis location (LAO)</text>
+  <text x="60" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#67e8f9">pLAD</text>
+  <path d="M120 400 L120 470" fill="none" stroke="#f9fafb" stroke-width="9"/>
+  <ellipse cx="122" cy="400" rx="12" ry="9" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="280" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fca5a5">mLAD</text>
+  <path d="M340 380 L340 470" fill="none" stroke="#f9fafb" stroke-width="9"/>
+  <ellipse cx="342" cy="420" rx="12" ry="9" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="500" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#67e8f9">dLAD</text>
+  <path d="M560 380 L560 470" fill="none" stroke="#f9fafb" stroke-width="8"/>
+  <ellipse cx="562" cy="440" rx="12" ry="9" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+  <rect x="700" y="345" width="220" height="140" rx="8" fill="#1f2937" stroke="#4b5563"/>
+  <text x="716" y="370" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fbbf24">How to read</text>
+  <text x="716" y="390" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1">1. Name vessel (LAD/RCA)</text>
+  <text x="716" y="406" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1">2. Segment: p / m / d</text>
+  <text x="716" y="422" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1">3. Find abrupt narrowing</text>
+  <text x="716" y="438" font-family="Arial, sans-serif" font-size="9" fill="#cbd5e1">4. Check TIMI flow</text>
+</svg>

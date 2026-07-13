@@ -1,5 +1,6 @@
 "use client";
 
+import { FormattedText } from "@/components/FormattedText";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { searchItems } from "@/lib/search";
@@ -67,7 +68,9 @@ export function SearchResults() {
           {result.subtitle && (
             <p className="mt-1 text-sm text-slate-500">{result.subtitle}</p>
           )}
-          <p className="mt-2 text-sm leading-6 text-slate-700">{result.summary}</p>
+          <p className="mt-2 text-sm leading-6 text-slate-700">
+            <FormattedText>{result.summary}</FormattedText>
+          </p>
         </Link>
       ))}
     </div>

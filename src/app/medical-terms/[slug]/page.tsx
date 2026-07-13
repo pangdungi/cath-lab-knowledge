@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { FormattedText } from "@/components/FormattedText";
 import {
   getMedicalTermBySlug,
   medicalTerms,
@@ -58,7 +59,7 @@ export default async function MedicalTermDetailPage({
           </h2>
           <div className="space-y-3">
             <p className="rounded-lg bg-slate-50 px-4 py-3 text-base leading-7 text-slate-800">
-              {term.summary}
+              <FormattedText>{term.summary}</FormattedText>
             </p>
             <p className="rounded-lg border border-teal-100 bg-teal-50 px-4 py-3 text-base leading-7 text-teal-900">
               <span className="mr-2 text-xs font-semibold uppercase tracking-wide text-teal-600">
@@ -78,7 +79,7 @@ export default async function MedicalTermDetailPage({
                 key={paragraph}
                 className="text-base leading-7 text-slate-700"
               >
-                {paragraph}
+                <FormattedText>{paragraph}</FormattedText>
               </p>
             ))}
           </div>
@@ -100,7 +101,7 @@ export default async function MedicalTermDetailPage({
                     {index + 1}
                   </span>
                   <p className="pt-1 text-base leading-7 text-slate-700">
-                    {step}
+                    <FormattedText>{step}</FormattedText>
                   </p>
                 </li>
               ))}
@@ -112,7 +113,9 @@ export default async function MedicalTermDetailPage({
           <h2 className="mb-3 text-lg font-semibold text-slate-900">
             임상적 활용
           </h2>
-          <p className="leading-7 text-slate-700">{term.clinicalUse}</p>
+          <p className="leading-7 text-slate-700">
+            <FormattedText>{term.clinicalUse}</FormattedText>
+          </p>
         </section>
 
         <section className="mb-8">
@@ -126,7 +129,9 @@ export default async function MedicalTermDetailPage({
                 className="flex gap-3 text-sm leading-6 text-slate-700"
               >
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" />
-                <span>{point}</span>
+                <span>
+                  <FormattedText>{point}</FormattedText>
+                </span>
               </li>
             ))}
           </ul>

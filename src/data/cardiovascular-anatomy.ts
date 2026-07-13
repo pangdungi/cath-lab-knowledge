@@ -69,8 +69,98 @@ export const cardiovascularAnatomy: KnowledgeArticle[] = [
       "p/m/d = 근위/체/원위부",
       "우성형·좌성형·공우성형 = PDA 기원으로 구분",
     ],
-    relatedItems: ["PCI", "LAD", "RCA", "PDA", "판막 해부학"],
+    relatedItems: ["PCI", "LAD", "RCA", "PDA", "판막 해부학", "CABG 이식 혈관", "관상동맥 협착 — 조영 해석"],
     tags: ["해부학", "관상동맥", "조영실", "이미지"],
+  },
+  {
+    slug: "cabg-graft-vessels",
+    title: "CABG 이식 혈관",
+    englishName: "CABG Graft Vessels",
+    koreanName: "관상동맥우회술 이식 혈관 해부학",
+    summary:
+      "CABG에서 쓰는 이식 혈관(LITA·RITA·요골동맥·대복정맥)의 해부학적 기원, 경로, 연결 부위와 동맥·정맥 이식의 차이를 정리",
+    summaryEn:
+      "CABG graft anatomy covers internal thoracic (mammary), radial, and saphenous vein conduits — origin, course, anastomosis targets, and arterial vs venous patency.",
+    definition: [
+      "CABG(Coronary Artery Bypass Grafting, 관상동맥우회술)는 막힌 관상동맥을 **우회(bypass)** 하기 위해 다른 혈관을 가져와 연결하는 수술입니다. 가져오는 혈관을 **이식 혈관(conduit, graft)** 이라고 부릅니다.",
+      "이식 혈관은 크게 **동맥 이식(arterial graft)** 과 **정맥 이식(venous graft)** 으로 나뉩니다. 동맥 이식은 장기 개통률(patency)이 높아 현재 표준에 가깝고, 정맥 이식은 여러 군데를 한꺼번에 우회할 때 여전히 많이 씁니다.",
+      "**'어디서 떼고(채취)'**, **'어디에 붙이는지(문합)'** 를 구분하는 것이 핵심입니다. **LITA** 는 완전히 떼지 않고(in-situ) **쇄골하동맥→흉골 옆** 을 그대로 쓰며 **distal 끝만 LAD** 에 붙입니다. **요골동맥·대복정맥** 은 몸에서 **완전히 채취(free graft)** 하고, **proximal(근위)은 대동맥**, **distal(원위)은 관상동맥 협착 너머** 에 붙입니다.",
+      "**LITA/LIMA(좌흉내 동맥, Left Internal Thoracic Artery)** 는 가장 중요한 이식 혈관입니다. 쇄골하 동맥(subclavian artery)에서 나와 흉골 옆을 따라 내려가며, **그대로(in-situ)** LAD에 연결하는 것이 gold standard입니다. RITA(우흉내 동맥)도 같은 구조이나 LITA보다 덜 씁니다.",
+      "**요골동맥(Radial artery)** 은 전완에서 채취하는 **자유 동맥 이식(free arterial graft)** 입니다. 팔꿈치 동맥(brachial)에서 갈라져 요골 쪽으로 내려갑니다. 채취 전 **Allen test** 로 손 혈류가 충분한지 반드시 확인합니다. LCX 분지(OM), 대각지(diagonal), PDA 등에 연결합니다.",
+      "**대복정맥 이식(SVG, Saphenous Vein Graft)** 은 다리 안쪽의 **대복정맥(greater saphenous vein)** 을 채취합니다. 발등·내측복사에서 시작해 허벅지 안쪽을 따라 올라갑니다. RCA, OM, 여러 관상동맥에 동시에 연결하기 쉬워 역사적으로 가장 흔했으나, **10년 개통률이 동맥 이식보다 낮습니다.**",
+      "드물게 **위망막동맥(Gastroepiploic artery, GEA)** 를 복부에서 채취해 RCA 등에 쓰기도 합니다. 최근에는 **전동맥 이식(all-arterial revascularization)** 전략 — LITA + 요골동맥 조합 — 이 권장되는 경우가 많습니다.",
+      "조영실·Cath lab에서 CABG 환자를 볼 때는 '어느 혈관이 이식됐는지', 'native vs graft'를 구분하는 것이 핵심입니다. 이식 부위는 **proximal(근위) 연결부** 와 **distal(원위) 문합부(anastomosis)** 로 나뉘며, 협착은 주로 문합부·이식혈관 본체·native 쪽 진입부에서 발생합니다.",
+      "한마디로, CABG 이식 혈관은 **'어디서 왔는지(기원)'**, **'어디에 붙었는지(표적 관상동맥)'**, **'동맥인지 정맥인지'** 를 아는 것이 해부생리학 이해의 시작입니다.",
+    ],
+    images: [
+      {
+        src: "/images/anatomy/cabg-graft-harvest-attach.svg",
+        alt: "CABG 이식 혈관 채취 위치와 연결 위치 - LITA, 요골동맥, SVG 각각 어디서 떼고 어디에 붙이는지",
+        caption:
+          "채취(떼는 곳) vs 연결(붙이는 곳) 한눈에. 주황=채취·기원, 초록=distal 문합. LITA: in-situ(쇄골하→흉골 옆)→LAD. 요골동맥: 전완 채취→proximal 대동맥, distal OM/diagonal/PDA. SVG: 다리 안쪽 채취→proximal 대동맥(aortic punch), distal RCA/OM/PDA.",
+      },
+      {
+        src: "/images/anatomy/cabg-graft-body-map.svg",
+        alt: "CABG 전신 도해 - 몸에서 심장까지 이식 혈관 경로",
+        caption:
+          "전신 맵. 몸(흉곽·전완·다리)에서 채취한 혈관이 심장 관상동맥 어디에 연결되는지 화살표로 표시. LITA는 in-situ로 흉골 옆에서 직접 LAD로, free graft(요골·SVG)는 proximal→대동맥, distal→관상동맥.",
+      },
+      {
+        src: "/images/anatomy/cabg-graft-overview.svg",
+        alt: "CABG 이식 혈관 개요 - LITA, 요골동맥, 대복정맥이 LAD, LCX, RCA에 연결되는 도해",
+        caption:
+          "CABG 이식 혈관 전체 개요. 녹색=LITA(흉내 동맥, in-situ) → LAD, 보라=요골동맥(free arterial) → LCX/OM, 파랑=SVG(대복정맥) → RCA 등. 노란 원=협착 부위.",
+      },
+      {
+        src: "/images/anatomy/cabg-graft-sources.svg",
+        alt: "CABG 이식 혈관 채취 부위 상세 - 흉내 동맥, 요골동맥, 대복정맥 해부 위치",
+        caption:
+          "채취 부위 상세. 좌=ITA(IMA): 쇄골하동맥→흉골 옆(in-situ, 완전 채취 아님). 중=요골동맥: 전완 전체, Allen test 필수. 우=대복정맥: 다리 안쪽(medial), EVH 또는 개방 채취.",
+      },
+      {
+        src: "/images/anatomy/cabg-graft-patency.svg",
+        alt: "CABG 이식 혈관 10년 개통률 비교 - LITA, 요골동맥, SVG",
+        caption:
+          "이식 혈관별 장기 개통률과 혈관벽 특성. LITA→LAD ~95%, 요골동맥 ~85%, SVG ~50%(10년 기준, 대략적). 동맥 이식은 내막 기능이 유지되어 혈관경화에 강하고, 정맥 이식은 동맥압에 적응하며 조기·만성 협착이 흔합니다.",
+      },
+    ],
+    imagesTitle: "해부 도해",
+    imagesSubtitle: "채취 위치 · 연결 위치 · 전신 경로",
+    measurementSteps: [
+      "【공통 원칙】 Distal anastomosis = native 관상동맥 **협착 너머(beyond stenosis)** · Proximal = in-situ ITA origin 또는 aorta(SVG/radial)",
+      "LITA / LIMA → **채취:** in-situ, 쇄골하동맥 기원·흉골 내측 1~2 cm (완전 떼지 않음) · **연결:** distal end → **LAD** (gold standard)",
+      "RITA / RIMA → **채취:** 우측 흉골 옆 in-situ · **연결:** RCA 또는 lateral wall free graft",
+      "Radial artery → **채취:** 전완 요골동맥 전체(brachial bifurcation~wrist), Allen test(-) · **연결:** proximal → **ascending aorta** · distal → **OM, diagonal, PDA**",
+      "SVG → **채취:** 대복정맥(GSV), 다리 안쪽(medial leg), EVH or open · **연결:** proximal → **aorta punch** · distal → **RCA, OM, PDA** (jump graft 가능)",
+      "GEA (Gastroepiploic artery) → 위 대망 · 복부 채취 · 드물게 RCA 등에 사용",
+      "Anastomosis (문합) → proximal: aorta or in-situ ITA origin · distal: target coronary beyond stenosis",
+      "Graft failure 위치 → distal anastomosis(가장 흔함) · graft body · proximal anastomosis · native coronary entry",
+      "조영 시 구분 → 'LIMA-LAD patent' / 'SVG-OM occluded' / 'jump graft' = 하나의 이식혈관에서 여러 관상동맥으로 분기",
+      "Native vs graft → 이식 후에도 원래 관상동맥(native)은 남아 있음 · graft와 native가 동시에 협착될 수 있음",
+      "수술 기록 확인 항목 → LITA→LAD? SVG 개수? Radial 사용? RITA? target vessel 이름(LAD, OM1, PDA, RCA)",
+    ],
+    stepsTitle: "이식 혈관별 정리",
+    stepsSubtitle: "기원 · 채취 · 연결 부위",
+    clinicalUse:
+      "CABG 환자의 조영·PCI·재협심증 평가에 필수적인 해부학입니다. Cath lab에서 'LIMA-LAD는 patent, SVG-RCA는 occluded'처럼 보고할 때 같은 그림을 그릴 수 있어야 합니다. 이식 혈관 종류에 따라 협착 시기·시술 난이도·약물(요골동맥 spasm 예방용 칼슘채널차단제 등)이 달라집니다. 수술 기록(op note)에서 어떤 conduit가 어디에 연결됐는지 확인한 뒤, native coronary anatomy(관상동맥 구조 항목)와 함께 읽는 것이 중요합니다.",
+    keyPoints: [
+      "채취 vs 연결: 어디서 떼고 어디에 붙이는지 구분",
+      "LITA: in-situ, distal만 LAD에 문합",
+      "요골·SVG: free graft, proximal=aorta, distal=관상동맥",
+      "LITA(LIMA) → LAD: gold standard, 최고 개통률",
+      "문합부(distal anastomosis)가 협착·폐쇄의 흔한 부위",
+      "native coronary와 graft를 조영·보고서에서 구분",
+    ],
+    relatedItems: [
+      "관상동맥 구조",
+      "LAD",
+      "RCA",
+      "LCX",
+      "PCI",
+      "CABG",
+      "CABG LHC — 우요골 접근이 어려운 이유",
+    ],
+    tags: ["해부학", "CABG", "이식혈관", "LITA", "SVG", "이미지"],
   },
   {
     slug: "heart-valve-anatomy",

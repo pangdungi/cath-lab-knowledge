@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-label="CABG graft harvest sites">
+  <rect width="960" height="480" fill="#f8fafc"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">CABG Conduit Harvest Sites</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Anatomical origin and course of each graft vessel</text>
+
+  <rect x="24" y="80" width="290" height="360" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="44" y="110" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0f766e">Internal Thoracic Artery (ITA)</text>
+  <text x="44" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748b">aka Internal Mammary Artery (IMA)</text>
+  <ellipse cx="169" cy="260" rx="70" ry="90" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="155" y="190" width="28" height="140" rx="4" fill="#cbd5e1" stroke="#64748b"/>
+  <path d="M120 200 C130 220 145 250 155 280" fill="none" stroke="#0d9488" stroke-width="5" stroke-linecap="round"/>
+  <path d="M203 200 C193 220 178 250 168 280" fill="none" stroke="#0d9488" stroke-width="5" stroke-linecap="round"/>
+  <path d="M100 185 C115 175 130 170 145 168" fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="175" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#334155">Subclavian</text>
+  <text x="108" y="310" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#0f766e">LITA</text>
+  <text x="188" y="310" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#0f766e">RITA</text>
+  <text x="44" y="350" font-family="Arial, sans-serif" font-size="10" fill="#334155">Origin: subclavian artery</text>
+  <text x="44" y="368" font-family="Arial, sans-serif" font-size="10" fill="#334155">Runs parallel to sternum (1-2 cm)</text>
+  <text x="44" y="386" font-family="Arial, sans-serif" font-size="10" fill="#334155">In-situ graft - not fully harvested</text>
+  <text x="44" y="404" font-family="Arial, sans-serif" font-size="10" fill="#334155">Attach distal to LAD (most common)</text>
+
+  <rect x="335" y="80" width="290" height="360" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="355" y="110" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#6d28d9">Radial Artery</text>
+  <text x="355" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Free arterial graft from forearm</text>
+  <rect x="430" y="170" width="100" height="160" rx="40" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+  <path d="M480 190 C478 230 476 270 474 310" fill="none" stroke="#7c3aed" stroke-width="6" stroke-linecap="round"/>
+  <text x="462" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#6d28d9">Radial A.</text>
+  <text x="355" y="350" font-family="Arial, sans-serif" font-size="10" fill="#334155">Origin: brachial bifurcation</text>
+  <text x="355" y="368" font-family="Arial, sans-serif" font-size="10" fill="#334155">Harvest entire forearm segment</text>
+  <text x="355" y="386" font-family="Arial, sans-serif" font-size="10" fill="#334155">Allen test must be negative</text>
+  <text x="355" y="404" font-family="Arial, sans-serif" font-size="10" fill="#334155">Attach: aorta prox, OM/PDA distal</text>
+
+  <rect x="646" y="80" width="290" height="360" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="666" y="110" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d4ed8">Saphenous Vein Graft (SVG)</text>
+  <text x="666" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Greater saphenous vein from leg</text>
+  <rect x="760" y="170" width="70" height="170" rx="20" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M795 185 C793 230 791 275 789 320" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+  <text x="770" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1d4ed8">GSV</text>
+  <text x="666" y="350" font-family="Arial, sans-serif" font-size="10" fill="#334155">Origin: medial leg / ankle area</text>
+  <text x="666" y="368" font-family="Arial, sans-serif" font-size="10" fill="#334155">EVH or open stripping</text>
+  <text x="666" y="386" font-family="Arial, sans-serif" font-size="10" fill="#334155">Attach: aorta prox, RCA/OM distal</text>
+</svg>

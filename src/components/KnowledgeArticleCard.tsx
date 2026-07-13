@@ -1,3 +1,4 @@
+import { FormattedText } from "@/components/FormattedText";
 import Link from "next/link";
 import type { KnowledgeArticle } from "@/types/knowledge-article";
 
@@ -29,7 +30,9 @@ export function KnowledgeArticleCard({
         )}
       </div>
 
-      <p className="mb-4 text-sm leading-6 text-slate-700">{article.summary}</p>
+      <p className="mb-4 text-sm leading-6 text-slate-700">
+        <FormattedText>{article.summary}</FormattedText>
+      </p>
 
       <div className="flex flex-wrap gap-2">
         {article.tags.map((tag) => (

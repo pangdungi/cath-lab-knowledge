@@ -184,6 +184,94 @@ export const epTopics: KnowledgeArticle[] = [
     ],
     tags: ["EP", "부정맥", "심전도", "AF", "카디오버전"],
   },
+  {
+    slug: "mi-ecg-by-location",
+    title: "심근경색 부위별 ECG",
+    englishName: "ECG Changes by Myocardial Infarction Location",
+    koreanName: "STEMI·NSTEMI 부위별 심전도 변화",
+    summary:
+      "심근 괴사 부위마다 ST 상승·Q파·역변화가 나타나는 유도가 다름 — 전벽·하벽·측벽·후벽·중격·우심실, 관상동맥 연관",
+    summaryEn:
+      "Each infarct territory shows characteristic ST elevation, Q waves, and reciprocal changes on specific leads — anterior, inferior, lateral, posterior, septal, and RV with coronary correlation.",
+    definition: [
+      "급성 **심근경색(MI)** 에서 심전도는 **어느 부위 심근이 괴사 중인지** 가르는 가장 빠른 단서입니다. **STEMI**는 해당 유도에서 **ST segment elevation** 이 보이고, 시간이 지나면 **병리적 Q파**가 생길 수 있습니다.",
+      "핵심 원리: **인접한 2개 이상 유도(contiguous leads)** 에서 ST↑가 나오면 그 **영역(territory)** 의 STEMI를 의심합니다. 한 유도만 보면 안 되고, **유도 조합 + 증상 + troponin**을 함께 봅니다.",
+      "**전벽(Anterior)** = V1~V4 · **중격(Septal)** = V1~V2 · **측벽(Lateral)** = I, aVL, V5~V6 · **하벽(Inferior)** = II, III, aVF · **후벽(Posterior)** = V7~V9 ST↑ (전흉 V1~V3에서는 ST↓·R파 증가로 간접 소견) · **우심실(RV)** = **V4R** ST↑ (하벽 STEMI와 함께 확인)",
+      "관상동맥 연관(일반적): **LAD** → 전벽·중격 · **RCA** → 하벽(+우심실·후벽) · **LCx(좌관상동맥)** → 측벽·후벽. 조영실에서는 ECG 패턴으로 **어느 혈관을 먼저 열어야 하는지** 예측합니다.",
+      "한마디로, **'ST↑가 어느 유도에 있느냐 = 괴사 부위 = 의심 혈관'** 입니다.",
+    ],
+    images: [
+      {
+        src: "/images/ep/mi-ecg-stemi-patterns.svg",
+        alt: "STEMI 부위별 ECG ST 변화 - Anterior, Inferior, Lateral, Posterior, V4R",
+        caption:
+          "부위별 ST segment 패턴 예시. 주황 = ST elevation(STEMI) · 보라 = ST depression(후벽 간접 소견). Anterior(V1-V4) · Inferior(II,III,aVF) · Lateral(I,aVL,V5-V6) · Posterior(V1-V3 ST↓, V7-V9 ST↑) · RV(V4R).",
+      },
+      {
+        src: "/images/ep/mi-ecg-12lead-anterior.svg",
+        alt: "12-lead ECG Anterior STEMI 예시 - V2-V4 ST elevation, inferior reciprocal ST depression",
+        caption:
+          "전벽 STEMI 12-lead 배치 예시: V2-V4 ST↑가 두드러지고, 하벽 유도(II, III, aVF)에 역변화 ST↓가 동반될 수 있습니다(LAD 폐색 패턴).",
+      },
+      {
+        src: "/images/ep/mi-ecg-locations.svg",
+        alt: "심근경색 부위별 ECG 유도 매핑 - Anterior, Inferior, Lateral, Posterior",
+        caption:
+          "STEMI 부위별 대표 유도와 관상동맥 연관: Anterior(V1-V4, LAD) · Inferior(II,III,aVF, RCA) · Lateral(I,aVL,V5-V6, LCx) · Posterior(V7-V9).",
+      },
+    ],
+    imagesTitle: "심전도",
+    imagesSubtitle: "부위별 ST↑ 패턴 · 12-lead 예시",
+    measurementSteps: [
+      "【STEMI 진단 기준(요약)】 **2개 이상 인접 유도**에서 ST↑ **≥1 mm**(흉유도) · **V2-V3**는 성별·나이별 기준(남 <40세 2.5mm, ≥40세 2mm, 여 1.5mm) · **새로운 LBBB** = STEMI equivalent(동등 소견) · **후벽**은 V7-V9 ST↑로 확정",
+      "【전벽 Anterior STEMI】 **ST↑ V1, V2, V3, V4**(2개 이상 연속) · **역변화(reciprocal)**: 하벽(II,III,aVF) ST↓ · **Q파** 나중에 V1-V4 · **의심 혈관: LAD** · 임상: 전심실 기능 저하·심부전·killip 높음 가능",
+      "【중격 Septal】 **ST↑ V1-V2** 중심(전벽과 겹침 많음) · **병리적 Q V1-V2** · LAD proximal/septal branch · 전벽 STEMI와 함께 해석",
+      "【측벽 Lateral STEMI】 **고측벽**: ST↑ **I, aVL** · **저측벽**: ST↑ **V5, V6** · 전체 측벽: I,aVL + V5-V6 · **역변화**: 하벽 또는 V1-V3 ST↓ · **의심 혈관: LCx**, LAD diagonal/obtuse marginal",
+      "【하벽 Inferior STEMI】 **ST↑ II, III, aVF** 중 **2개 이상** · **역변화**: I, aVL ST↓ · **의심 혈관: RCA**(가장 흔함), LCx · **반드시**: **우심실 MI** 배제 위해 **V4R** 기록 — ST↑ 있으면 **nitrate/nitroglycerin 신중**, **수액 우선**",
+      "【후벽 Posterior STEMI】 전흉 유도만 보면 **놓치기 쉬움** · **간접 소견**: **V1-V3 ST depression** + **tall R wave** + upright T · **확정**: **V7, V8, V9 ST elevation** (후흉 유도) · RCA 또는 LCx · **하벽 STEMI와 동반** 흔함",
+      "【우심실 RV infarction】 **하벽 STEMI 환자**에서 · **V4R ST↑ ≥1 mm** · 저혈압·JVD·clear lungs · **치료**: **수액**, **니트로·이뇨제·마약제 신중**(preload↓ 위험)",
+      "【시간에 따른 변화】 초기(수시간): **ST↑** · 수일: **T파 변화** · 수주~: **Q파 고정**, ST 정상화 · **NSTEMI**: ST↑ 없음(일시 ST↓·T inversion 가능) — 부위별 패턴은 STEMI만큼 뚜렷하지 않음",
+      "【조영실·응급 연결】 Anterior/LAD → **긴급 PCI LAD** · Inferior/RCA → **RCA PCI**, RV MI면 **수액·혈압** 먼저 · Posterior → **후벽 유도 재확인**, RCA/LCx · Lateral/LCx → **LCx 또는 branch** · ECG + 증상 + echo(벽운동 이상) 종합",
+      "【한눈에 표】 Anterior=V1-V4(LAD) · Septal=V1-V2 · Lateral=I,aVL,V5-V6(LCx) · Inferior=II,III,aVF(RCA) · Posterior=V7-V9 · RV=V4R",
+    ],
+    stepsTitle: "부위별 ECG",
+    stepsSubtitle: "ST↑ 유도 · 역변화 · 관상동맥",
+    clinicalUse:
+      "응급실·조영실·CCU에서 12-lead ECG를 보면 가장 먼저 '어느 벽 STEMI인가'를 분류합니다. 하벽 STEMI에서 V4R을 안 보면 우심실 MI를 놓쳐 니트로글리세린으로 저혈압·쇼크를 유발할 수 있고, 후벽 STEMI를 전흉만으로 놓치면 reperfusion이 지연됩니다. EP/조영 팀은 ECG 패턴을 관상동맥 해부와 연결해 PCI 전략을 세우고, STEMI equivalent(LBBB 등)도 빠르게 인식해야 합니다.",
+    nursingCare: {
+      pre: [
+        "12-lead ECG 즉시·10분마다 재기록(기관 프로토콜)",
+        "하벽 STEMI → V4R 유도 추가 확인 요청",
+        "후벽 의심(V1-V3 ST↓, tall R) → V7-V9 기록",
+        "ST↑ 유도·증상·troponin·혈압 동시 기록",
+        "STEMI 활성화·조영실 이송 시간 기록",
+      ],
+      post: [
+        "재관류(PCI) 전후 ECG 비교 — ST↓(reciprocal improvement) 확인",
+        "새로운 부정맥(VF, AV block — 하벽/RCA) 모니터",
+        "RV MI 시 니트로·이뇨제 투여 여부 의사 확인",
+        "재발 흉통 시 즉시 12-lead 재취득",
+        "ECG·시간·증상 변화 정확히 문서화",
+      ],
+    },
+    keyPoints: [
+      "2개 이상 인접 유도 ST↑ = STEMI territory",
+      "Anterior V1-V4(LAD) · Inferior II,III,aVF(RCA)",
+      "Lateral I,aVL,V5-V6(LCx) · Posterior V7-V9",
+      "하벽 STEMI → V4R(우심실) 필수",
+      "후벽: V1-V3 ST↓·tall R → V7-V9 확인",
+      "ECG 부위 = PCI 타깃 혈관 예측",
+    ],
+    relatedItems: [
+      "STEMI",
+      "NSTEMI",
+      "LAD",
+      "RCA",
+      "PCI",
+      "TnT ACS Interpretation",
+    ],
+    tags: ["EP", "심전도", "STEMI", "MI", "12-lead", "조영실"],
+  },
 ];
 
 export function getEpTopicBySlug(slug: string): KnowledgeArticle | undefined {
