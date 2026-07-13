@@ -17,6 +17,19 @@ export const metadata: Metadata = {
   title: "Cath Lab Knowledge | 심혈관 조영실 지식 모음집",
   description:
     "심혈관 조영실에서 일하는 간호사와 의사를 위한 의학용어 및 임상 지식 모음집",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/app-icon.png", sizes: "1024x1024", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon-32x32.png",
+  },
+  appleWebApp: {
+    title: "Cath Lab Knowledge",
+  },
 };
 
 export default function RootLayout({

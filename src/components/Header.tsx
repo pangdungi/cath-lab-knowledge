@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SearchForm } from "@/components/SearchForm";
 
@@ -6,9 +7,14 @@ export function Header() {
     <header className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between sm:py-0 sm:h-16">
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-700 text-sm font-bold text-white">
-            CL
-          </span>
+          <Image
+            src="/app-icon.png"
+            alt="Cath Lab Knowledge"
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-lg"
+            priority
+          />
           <div>
             <p className="text-sm font-semibold text-slate-900">
               Cath Lab Knowledge
