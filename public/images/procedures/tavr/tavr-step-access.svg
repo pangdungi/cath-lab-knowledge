@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img">
+  <rect width="600" height="220" fill="#f8fafc"/>
+  <text x="20" y="32" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">대퇴동맥 접근</text>
+  <path d="M80 120 L200 100 L320 110" stroke="#991b1b" stroke-width="6" fill="none"/>
+  <text x="60" y="150" font-family="Arial,sans-serif" font-size="11" fill="#1d4ed8">대퇴 → 대동맥</text>
+  <text x="60" y="175" font-family="Arial,sans-serif" font-size="11" fill="#334155">Sheath 14~20 Fr (기종별)</text>
+</svg>

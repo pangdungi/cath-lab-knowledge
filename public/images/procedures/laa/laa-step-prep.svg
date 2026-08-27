@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="LAA 시술 전 준비">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">1단계 — 시술 전 준비</text>
+  <rect x="40" y="60" width="300" height="170" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#0f172a">선별·검사</text>
+  <text x="60" y="115" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ 비판막 AF · CHA2DS2-VASc</text>
+  <text x="60" y="138" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ TEE — LAA 크기·형태·혈전 없음</text>
+  <text x="60" y="161" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ 항응고 중단 일정(기관)</text>
+  <text x="60" y="184" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ 금식 · TEE 하강장 약</text>
+  <rect x="370" y="60" width="300" height="170" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="390" y="90" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">기종</text>
+  <text x="390" y="115" font-family="Arial,sans-serif" font-size="11" fill="#334155">Watchman FLX/FLX Pro</text>
+  <text x="390" y="138" font-family="Arial,sans-serif" font-size="11" fill="#334155">Amulet 등 (기관별)</text>
+  <text x="390" y="161" font-family="Arial,sans-serif" font-size="11" fill="#334155">TEE + 조영 가이드</text>
+</svg>

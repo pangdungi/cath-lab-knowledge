@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-label="우측 경정맥 접근">
+  <rect width="700" height="300" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">2단계 — 우측 경정맥 접근</text>
+  <circle cx="350" cy="90" r="40" fill="#fde68a" stroke="#d97706"/>
+  <text x="320" y="95" font-family="Arial,sans-serif" font-size="11" fill="#92400e">머리</text>
+  <path d="M350 130 L350 200" stroke="#2563eb" stroke-width="8"/>
+  <text x="370" y="170" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">우측 경정맥</text>
+  <path d="M350 200 C350 230 300 250 250 260" stroke="#2563eb" stroke-width="6" fill="none"/>
+  <ellipse cx="220" cy="265" rx="55" ry="35" fill="#fff1f2" stroke="#fda4af"/>
+  <text x="185" y="270" font-family="Arial,sans-serif" font-size="10" fill="#be123c">심장</text>
+  <rect x="400" y="120" width="260" height="150" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="420" y="150" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 초음파 보면서 바늘 넣기</text>
+  <text x="420" y="175" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 9 Fr sheath 삽입</text>
+  <text x="420" y="200" font-family="Arial,sans-serif" font-size="11" fill="#334155">· UFH 100 U/kg 투여</text>
+  <text x="420" y="230" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0f766e">전신마취 없이 국소마취로 가능</text>
+</svg>

@@ -240,50 +240,127 @@ export const procedures: KnowledgeArticle[] = [
     summaryEn:
       "TAVR replaces the aortic valve through a catheter without open-heart surgery.",
     definition: [
-      "TAVR(경피적 대동맥판 치환술)는 대퇴동맥 등 혈관으로 카테터를 넣어, 좁아진 대동맥판 자리에 새 인공판막을 전개해 고정하는 시술입니다.",
-      "주로 심한 대동맥판 협착 환자에서, 개심 수술 위험이 높거나 수술이 어려운 경우에 선택합니다.",
-      "시술 전 CT·심초음파로 혈관 접근 경로, 판막 크기, 관상동맥 위치를 꼼꼼히 계획합니다.",
-      "시술 중 TEE와 조영으로 판막 위치, 누출, 관상동맥 막힘 여부를 확인합니다.",
-      "한마디로, '카테터로 대동맥판을 갈아끼우는 시술'입니다.",
+      "**TAVR(경피적 대동맥판 치환술)** 는 **흉터를 크게 열지 않고**, **대퇴동맥** 등에서 카테터를 넣어 **좁아진 대동맥판 자리에 새 인공판막**을 펼쳐 넣는 시술입니다.",
+      "**쉽게 말하면**: 기존 판막이 돌처럼 딱딱해져 혈이 잘 안 나가면 → 카테터로 **새 판막을 끼워 넣어** 혈이 다시 잘 나가게 해 주는 것. PCI가 관상동맥을 넓히는 것이라면, TAVR은 **심장 입구(대동맥판) 자체를 갈아끼우는** 시술입니다.",
+      "**누가 받나**: **심한 대동맥판 협착**인데 **개심 수술 위험이 크거나** 나이·합병증 때문에 수술이 어려운 환자.",
+      "**시술 전 꼭 보는 것**: **CT**(판막 크기·접근 혈관·관상동맥 높이) + **심초음파** + **TEE**(시술 중 판막 위치·누출 확인).",
+      "**하면 안 되거나 주의**: 심한 대동맥류·관상동맥 막힘 위험·너무 얇은 대동맥 벽(bicuspid 등) — 팀이 CT로 미리 걸러냄.",
+      "한마디로, **'대퇴에서 들어가 카테터로 대동맥판을 새 것으로 바꾸는 시술'** 입니다.",
     ],
-    measurementSteps: [
-      "시술 전: 심초음파·CT로 판막 협착 정도, 판막 고리 크기, 접근 혈관 상태를 확인합니다.",
-      "환자 동의, 신기능, 항응고, 마취 계획을 확인합니다.",
-      "대퇴동맥(또는 경동맥/심실 중격 등)으로 접근합니다.",
-      "가이드 와이어·카테터로 대동맥판 위치까지 진입합니다.",
-      "필요 시 풍선으로 기존 판막을 먼저 확장합니다.",
-      "환자 판막 크기에 맞는 TAVR 기구를 선택해 위치시킵니다.",
-      "천천히 판막을 펼쳐 전개(deploy)하고 고정합니다.",
-      "TEE·조영으로 위치, 누출(PVL), 관상동맥 혈류, 리듬을 확인합니다.",
-      "접근 부위 출혈을 처리하고 회복실/중환자실로 이송합니다.",
-      "시술 후 항혈전/항혈소판 계획과 추적 심초음파 일정을 정합니다.",
+    videos: [
+      {
+        youtubeId: "HKTeAOiByLw",
+        title:
+          "Transcatheter Aortic Valve Replacement (TAVR) — UC Davis Health",
+        caption:
+          "TAVR 시술 과정 영상 — 접근·판막 전달·배포(deploy) 흐름을 영상으로 확인. 아래 단계별 설명과 함께 보면 이해가 빨라집니다.",
+        sourceUrl: "https://youtu.be/HKTeAOiByLw",
+      },
     ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "TAVR 시술 과정 (YouTube)",
+    images: [
+      {
+        src: "/images/procedures/tavr/tavr-principle.svg",
+        alt: "TAVR 원리 - 대퇴 접근에서 새 대동맥판 배치",
+        caption:
+          "**원리 한눈에.** 대퇴동맥 → wire로 판막 통과 → (필요 시 BAV) → 새 판막 deploy → TEE/조영으로 확인.",
+      },
+    ],
+    imagesTitle: "그림으로 이해하기",
+    imagesSubtitle: "TAVR 흐름",
     stepsTitle: "시술 절차",
-    stepsSubtitle: "단계별 순서",
+    stepsSubtitle: "단계별 순서 + 그림",
+    measurementSteps: [
+      {
+        text: "**시술 전 준비** — **CT**로 판막 크기(annulus)·접근할 대퇴동맥 상태·**관상동맥 입구 높이**를 봅니다. **심초음파**로 협착 정도·심실 기능 확인. **Valve kit**(SAPIEN=풍선으로 펼침 / Evolut=저절로 펼침)와 **sheath 크기**가 맞는지 스크럽 테이블에서 확인. **임시 pacing lead** 준비(BAV·deploy 때 씀).",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-prep.svg",
+          alt: "TAVR 시술 전 준비",
+          caption: "CT·심초음파·valve kit·pacing lead.",
+        },
+      },
+      {
+        text: "**대퇴동맥 접근** — 초음파 보면서 **대퇴동맥**에 바늘을 넣고 **큰 sheath(14~20 Fr, 기종별)** 를 삽입합니다. TAVR은 PCI보다 sheath가 훨씬 큽니다. 삽입 후 **헤파린** 투여(혈전 방지).",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-access.svg",
+          alt: "대퇴동맥 접근",
+          caption: "대퇴 → 대동맥. Sheath 14~20 Fr.",
+        },
+      },
+      {
+        text: "**조영 · Wire 진입** — pigtail로 **대동맥 뿌리(root) 조영** → 판막·관상동맥 위치 확인. **Soft wire**로 좁아진 **대동맥판을 통과**해 좌심실(LV)까지 넣습니다. 그다음 **stiff wire**(단단한 wire)로 바꿔서 delivery system이 움직일 때 안 흔들리게 고정.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-wire.svg",
+          alt: "Wire로 판막 통과",
+          caption: "Soft wire → stiff wire 교체.",
+        },
+      },
+      {
+        text: "**BAV (필요 시)** — 기존 판막이 너무 딱딱하면 **풍선으로 먼저 살짝 넓혀** 새 판막이 들어갈 공간을 만듭니다. 이때 **Rapid pacing**을 씁니다: **심박 180~220/min**으로 올려 **혈압을 일부러 떨어뜨린** 뒤(10~15초), 그 사이에 풍선을 팽창. 심장이 덜 움직이는 동안 정확히 넣기 위함.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-bav.svg",
+          alt: "BAV와 rapid pacing",
+          caption: "Pacing ON → 풍선 → Pacing OFF.",
+        },
+      },
+      {
+        text: "**판막 위치 맞추기** — 새 판막(delivery system)을 wire 위로 **판막 자리(annulus)** 에 맞춥니다. **TEE**(경식도 초음파)와 **조영**으로 **관상동맥 입구를 가리지 않는지**, 너무 LV 쪽/대동맥 쪽으로 치우치지 않았는지 확인. 위치가 핵심 — 잘못 넣으면 **누출(PVL)·관상동맥 막힘** 위험.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-position.svg",
+          alt: "판막 위치 맞추기",
+          caption: "Annulus 정렬 · coronary 가리지 않기.",
+        },
+      },
+      {
+        text: "**Deploy (판막 펼치기)** — **Balloon-expandable(SAPIEN)**: rapid pacing 켠 상태에서 **풍선을 팽창** → crimped 판막이 펼쳐짐 → 풍선 수축 → pacing 끔. **Self-expanding(Evolut)**: **sheath를 천천히 빼면** 판막이 저절로 펼쳐짐(기종·프로토콜에 따라 pacing 없을 수 있음). **이 순간이 시술의 하이라이트** — 팀 모두 BP·TEE·조영 집중.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-deploy.svg",
+          alt: "Valve deploy",
+          caption: "SAPIEN=풍선 / Evolut=sheath 후퇴.",
+        },
+      },
+      {
+        text: "**배포 후 확인** — **TEE**: 누출(PVL) 있나, 판막 위치, **관상동맥 혈류** OK인지. **심전도**: **새로운 LBBB·완전 방실차단** 생기면 **임시·영구 pacemaker** 필요할 수 있음(TAVR 후 흔한 합병증). **증상**: 흉통·의식 변화 → stroke·dissection 의심.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-check.svg",
+          alt: "배포 후 TEE·리듬 확인",
+          caption: "PVL · coronary · AV block 체크.",
+        },
+      },
+      {
+        text: "**마무리** — 큰 sheath 빼고 **출혈 처리**(ProGlide 등). **발 말초혈류** 반복 확인. 회복실/ICU로 이송. **항혈전/항혈소판** 처방, **24~48시간 뒤 심초음파** 추적.",
+        image: {
+          src: "/images/procedures/tavr/tavr-step-close.svg",
+          alt: "출혈 처리·회복실",
+          caption: "Hemostasis · 항혈전 · follow-up echo.",
+        },
+      },
+    ],
     clinicalUse:
       "고령·고위험 대동맥판 협착 환자의 대표적인 구조적 심장 시술입니다. 조영실/structural lab에서 혈관 접근, 배포 순간 모니터링, 출혈 관리가 핵심입니다. TAVR ViV는 과거 수술판 안에 다시 넣는 특수한 형태입니다.",
     nursingCare: {
       pre: [
-        "CT/심초음파 판막 크기·접근 혈관 계획 확인",
-        "금식, 알레르기, 동의서, 항응고 상태 확인",
-        "대퇴동맥 접근 부위 피부·말초혈류 사정",
-        "TEE 준비(마취/진정 계획 포함)",
-        "배포 순간 팀 역할·응급 장비 준비 확인",
+        "CT·심초음파 계획과 valve kit(사이즈·기종) 일치 확인",
+        "대퇴동맥 접근 부위 피부·말초혈류(발) 사정",
+        "TEE 준비·마취/진정 계획",
+        "Temporary pacing lead + generator 작동 확인",
+        "Deploy 순간 팀 역할 분담",
       ],
       post: [
-        "접근 부위 출혈·혈종·말초혈류 반복 확인",
-        "배포 직후 혈압·리듬·흉통·호흡·의식 변화 모니터링",
-        "완전 방실차단·새 부정맥 여부 즉시 보고",
-        "영구 심박기 필요 여부 기록",
-        "항혈전 계획·추적 심초음파 일정 확인",
+        "배포 직후 BP·ECG·TEE(PVL·coronary) 기록",
+        "새 LBBB·완전 AV block → pacemaker 팀 보고",
+        "대퇴 접근 출혈·혈종·발 말초혈류 반복 확인",
+        "흉통·의식 변화 → stroke/dissection 의심 즉시 보고",
+        "항혈전 처방·추적 심초음파 일정",
       ],
     },
     keyPoints: [
-      "목적: 카테터로 대동맥판 교체",
-      "주요 적응: 심한 대동맥판 협착 + 고위험 수술 환자",
-      "CT·TEE 계획과 배포 순간 확인이 핵심",
-      "합병증: 누출, 방실차단, 관상동맥 폐쇄, 탈자",
-      "TAVR ViV는 기존 인공판 안에 넣는 변형",
+      "대퇴동맥 접근 → wire로 판막 통과 → deploy",
+      "BAV/deploy 때 rapid pacing으로 BP↓ (의도적)",
+      "SAPIEN=풍선 펼침 / Evolut=sheath 후퇴",
+      "배포 후 TEE로 PVL·coronary·리듬 확인",
+      "합병증: 누출, AV block, stroke, dissection",
     ],
     relatedItems: ["TAVR ViV", "TEE", "Aortic Stenosis"],
     tags: ["시술", "대동맥판", "구조적", "TAVR"],
@@ -419,6 +496,17 @@ export const procedures: KnowledgeArticle[] = [
       "TMVR이 '판막 교체'라면, MitraClip은 '판막 잎을 클립으로 고정해 새는 것을 줄임'으로 이해하면 쉽습니다.",
       "한마디로, '승모판 역류를 클립 하나로 줄이는 경피적 성형 시술'입니다.",
     ],
+    videos: [
+      {
+        youtubeId: "FVSzWP77nNo",
+        title: "MitraClip Procedure Animation Video — Boulder Community Health",
+        caption:
+          "MitraClip 시술 애니메이션 — transseptal 진입, clip이 anterior·posterior leaflet을 잡아 고정하는 과정. TEE 가이드 하 clip deploy 흐름 이해용.",
+        sourceUrl: "https://youtu.be/FVSzWP77nNo",
+      },
+    ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "MitraClip 시술 과정 (YouTube)",
     measurementSteps: [
       "시술 전: TEE/심초음파로 MR 정도, 잎 모양, 좌심실 기능, 승모판 해부학 적합성을 확인합니다.",
       "환자 동의, 금식, TEE 준비, 항응고·마취 계획을 확인합니다.",
@@ -704,60 +792,278 @@ export const procedures: KnowledgeArticle[] = [
   {
     slug: "shockwave-lithotripsy",
     title: "Shockwave Lithotripsy",
-    englishName: "Intravascular Shockwave Lithotripsy (IVL)",
-    koreanName: "충격파 석회화 분쇄술",
+    englishName: "Intravascular Lithotripsy (IVL)",
+    koreanName: "혈관내 충격파 석회화 분쇄술 (IVL)",
     summary:
-      "혈관 안에서 충격파로 딱딱한 석회화 병변을 깨뜨려, 풍선·스텐트가 잘 펼쳐지게 돕는 시술",
+      "혈관 안에서 충격파로 딱딱한 석회화 병변을 깨뜨려, 풍선·스텐트가 잘 펼쳐지게 돕는 PCI 보조 시술",
     summaryEn:
-      "Shockwave lithotripsy uses sonic pulses inside the vessel to crack calcium so balloons and stents can expand properly.",
+      "Intravascular lithotripsy (IVL) uses sonic pulses inside the vessel to crack calcium so balloons and stents can expand properly.",
     definition: [
-      "Shockwave Lithotripsy(충격파 석회화 분쇄술)는 조영실에서 쓰는 혈관내 충격파 시술(IVL)입니다. 신장 결석 쇄석술과 이름이 비슷하지만, 여기서는 관상동맥·말초혈관의 석회화 병변을 다룹니다.",
-      "혈관 벽에 석회(칼슘)가 많이 쌓이면 풍선이나 스텐트가 제대로 펼쳐지지 않습니다. IVL은 특수 풍선 카테터로 짧은 충격파를 보내 석회를 균열 내고 부드럽게 만듭니다.",
-      "석회를 먼저 '깨트린' 다음, 일반 풍선·스텐트 시술을 이어가는 경우가 많습니다.",
-      "조영·IVUS로 석회화 정도를 확인한 뒤, 병변 길이에 맞는 Shockwave 카테터를 선택합니다.",
-      "한마디로, '딱딱한 혈관 석회를 충격파로 깨서 PCI를 가능하게 하는 시술'입니다.",
+      "**IVL(Intravascular Lithotripsy, 혈관내 충격파 석회화 분쇄술)** 은 조영실에서 쓰는 **석회화 PCI 전용 보조 시술**입니다. 이름이 신장 결석 쇄석술(ESWL)과 비슷하지만, 여기서는 **관상동맥·말초혈관 벽의 칼슘(석회)** 을 다룹니다.",
+      "**쉽게 말하면**: 혈관 벽에 칼슘이 **돌처럼 딱딱하게** 쌓이면, 일반 풍선·스텐트가 **안 펼쳐지거나 찌그러집니다.** IVL은 특수 풍선 카테터로 **짧은 충격파(sonic pulse)** 를 보내 석회에 **균열**을 내고, 그다음 **일반 PCI(풍선·DES/DCB)** 를 이어갑니다. 비유하면 **'얼어붙은 땅을 살짝 쪼개서 길을 뚫는 것'** 과 비슷합니다.",
+      "**누가 받나**: **심한 석회화 병변** — IVUS/OCT에서 석회 arc가 넓고(예: 270° 이상), 고압 NC balloon으로도 확장이 안 되거나, 스텐트 **under-expansion** 위험이 큰 PCI.",
+      "**Shockwave Medical** 시스템이 대표적입니다. 풍선 안 **emitter**가 sonic pulse를 보내고, generator가 펄스를 제어합니다.",
+      "**하면 안 되거나 주의**: 활성 감염·혈관 천공·층박리가 이미 있는 병변, 펄스 중 **팀 stand clear** 필요, **일시적 흉통** 흔함 — 천공·대량 출혈·지속 부정맥은 즉시 대응.",
+      "한마디로, **'딱딱한 혈관 석회를 충격파로 깨서 PCI를 가능하게 하는 시술'** 입니다.",
     ],
-    measurementSteps: [
-      "시술 전: 조영·IVUS/OCT로 석회화 범위와 길이를 확인합니다.",
-      "가이드 와이어를 병변을 지나도록 넣고, 충분한 항응고(헤파린)를 유지합니다.",
-      "병변 길이에 맞는 Shockwave 풍선 카테터를 혈관 안 석회 부위에 위치시킵니다.",
-      "카테터가 석회 구간을 정확히 덮는지 조영으로 확인합니다.",
-      "제조사 프로토콜에 따라 충격파 펄스를 여러 번 전달합니다. (시술 중 '지금 펄스' 타이밍을 팀이 공유)",
-      "각 펄스 후 혈압·심전도·흉통 여부를 확인합니다.",
-      "석회 분쇄 후 일반 풍선으로 확장하고, 필요하면 DES/DCB 등을 이어갑니다.",
-      "최종 조영·IVUS로 혈관 확장, 층류, 스텐트 밀착을 확인합니다.",
-      "접근 부위 출혈을 처리하고 회복실로 이송합니다.",
-      "시술 후 항혈전 계획과 추적 일정을 정리합니다.",
+    videos: [
+      {
+        youtubeId: "xkGIPWk0TeU",
+        title:
+          "The Coronary Intravascular Lithotripsy System | Sakra World Hospital",
+        caption:
+          "관상동맥 IVL(혈관내 충격파) 시스템 소개 영상 — Shockwave catheter·sonic pulse로 석회화 병변을 처리하는 흐름을 영상으로 확인. 아래 단계별 설명과 함께 보면 이해가 빨라집니다.",
+        sourceUrl: "https://youtu.be/xkGIPWk0TeU",
+      },
     ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "IVL 시술 (YouTube)",
+    images: [
+      {
+        src: "/images/procedures/ivl/ivl-principle.svg",
+        alt: "IVL 원리 - 석회화 병변을 충격파로 균열",
+        caption:
+          "**원리 한눈에.** 석회가 두꺼우면 풍선·스텐트가 안 펼쳐짐 → IVL pulse로 균열 → 이후 풍선·스텐트 PCI.",
+      },
+    ],
+    imagesTitle: "그림으로 이해하기",
+    imagesSubtitle: "IVL 원리",
     stepsTitle: "시술 절차",
-    stepsSubtitle: "단계별 순서",
+    stepsSubtitle: "단계별 순서 + 그림",
+    measurementSteps: [
+      {
+        text: "**시술 전 준비** — **IVUS 또는 OCT**로 석회 **arc(각도)·길이·깊이**를 먼저 봅니다. 병변 길이에 맞는 **Shockwave catheter** 크기(2.5 / 3.0 / 3.5 / 4.0 mm)와 **generator·connector** 작동을 스크럽 테이블에서 확인합니다. IVL 후 이어갈 **NC balloon**, **DES/DCB** 백업 준비. **DAPT**(아스피린+P2Y12) 복용·**ACT 목표 250~300초** 확인.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-prep.svg",
+          alt: "IVL 시술 전 준비",
+          caption: "IVUS/OCT · catheter · generator · NC balloon 백업.",
+        },
+      },
+      {
+        text: "**접근 · wire · 항응고** — **요골(radial)** 또는 **대퇴(femoral)** 접근, **6~7 Fr sheath**. LAD/RCA/LCx에 맞는 **guide catheter** 선택 후 **workhorse wire**로 병변을 **distal까지** 통과합니다. **UFH** 투여 → **ACT 250~300초** 달성. IVL 전·중 ACT를 반복 확인하고, 스크럽이 결과를 팀에 말합니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-access.svg",
+          alt: "IVL 접근과 항응고",
+          caption: "Radial/femoral · wire · ACT 250~300s.",
+        },
+      },
+      {
+        text: "**IVUS/OCT로 석회 평가** — cross-section에서 **석회 arc**(예: 180° / 270° / 360°), **병변 길이(mm)**, **reference vessel 직경**을 기록합니다. 이 수치로 **Shockwave balloon 크기·길이**를 고릅니다. wire가 병변 distal을 넘었는지, side branch 위치도 확인합니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-imaging.svg",
+          alt: "IVUS로 석회 평가",
+          caption: "석회 arc · 길이 · vessel Ø → catheter 선택.",
+        },
+      },
+      {
+        text: "**Shockwave 카테터 위치** — IVL catheter를 wire 위로 넣어 **석회 구간 정중앙**에 둡니다. 풍선의 **emitter(마커)** 가 calcium 위에 오도록 **조영**으로 proximal·distal edge를 확인합니다. 위치가 어긋나면 pulse 효과가 떨어지므로, **reposition**을 두려워하지 않습니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-position.svg",
+          alt: "Shockwave 카테터 위치",
+          caption: "석회 구간 정중앙 · 조영으로 edge 확인.",
+        },
+      },
+      {
+        text: "**충격파(sonic pulse) 전달** — 제조사 프로토콜에 따라 풍선을 **1:1 saline/contrast**로 채우고 **약 4 atm**에서 펄스를 보냅니다. 보통 **10 pulses × 여러 cycle**, 병변당 **최대 ~80 pulses**. 펄스 직전 팀이 **\"Pulses — stand clear!\"** 로 커뮤니케이션합니다. **각 cycle 후** 흉통·혈압·ECG·조영상 천공·층박리 징후를 확인하고, **pulse 횟수·위치**를 기록합니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-pulses.svg",
+          alt: "IVL 충격파 전달",
+          caption: "4 atm · 10 pulses/cycle · stand clear · 모니터.",
+        },
+      },
+      {
+        text: "**IVL 후 풍선 확장** — Shockwave catheter를 빼고 **NC balloon**으로 천천히 확장합니다. 석회가 깨진 뒤에는 **IVL 전보다 낮은 atm**에서도 luminal gain이 나는 경우가 많습니다. 조영으로 residual stenosis·dissection을 봅니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-balloon.svg",
+          alt: "IVL 후 NC balloon 확장",
+          caption: "석회 균열 후 NC balloon — luminal gain 확인.",
+        },
+      },
+      {
+        text: "**DES/DCB (계획 시)** — 병변 특성에 따라 **DES** 또는 **DCB**를 이어갑니다. IVL의 목적은 **스텐트가 제대로 펼쳐지고 밀착(apposition)** 하게 하는 것 — under-expansion을 줄입니다. 스텐트 deploy 후 **IVUS**로 expansion·malapposition을 확인합니다.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-stent.svg",
+          alt: "IVL 후 DES/DCB",
+          caption: "DES/DCB · expansion · apposition 확인.",
+        },
+      },
+      {
+        text: "**최종 확인 · 마무리** — **조영**: TIMI flow, residual stenosis, 층박리·side branch. **IVUS**: MLA, stent expansion, edge dissection. 이상 없으면 sheath 제거·hemostasis. 차트에 **IVL pulse 총 횟수·병변·이후 PCI** 기록. 회복실에서 **흉통·리듬·접근부 출혈** 모니터, **DAPT·조영제 신기능** 확인.",
+        image: {
+          src: "/images/procedures/ivl/ivl-step-final.svg",
+          alt: "IVL 최종 확인",
+          caption: "조영·IVUS · hemostasis · 회복실 모니터.",
+        },
+      },
+    ],
     clinicalUse:
-      "심하게 석회화된 관상동맥·말초혈관 PCI에서 사용합니다. 특히 스텐트가 잘 안 펼쳐지거나, 고압 풍선도 효과가 약한 병변에서 선택합니다. 조영실에서는 충격파 전달 순간 환자 통증·리듬 변화를 보고, 펄스 횟수·위치를 정확히 기록해야 합니다.",
+      "심하게 석회화된 관상동맥·말초혈관 PCI에서 사용합니다. 스텐트가 잘 안 펼쳐지거나, 고압 NC balloon도 효과가 약한 병변에서 선택합니다. 조영실에서는 **펄스 전달 순간** 환자 통증·리듬 변화를 보고, **pulse 횟수·위치·이후 PCI 결과**를 정확히 기록해야 합니다. IVL만으로 끝나는 경우보다 **IVL → balloon → DES/DCB** 순서가 일반적입니다.",
     nursingCare: {
       pre: [
-        "조영·IVUS로 석회화 병변 위치·길이 확인",
-        "Shockwave 카테터·발생기 작동 점검",
-        "항응고(헤파린) 및 ACT 목표치 준비",
-        "펄스 전달 시 팀 커뮤니케이션 역할 분담",
-        "금식, 알레르기, 동의서, 신기능 확인",
+        "IVUS/OCT 석회 arc·길이·깊이 결과 확인",
+        "Shockwave catheter·generator·connector 작동 점검",
+        "NC balloon·DES/DCB 백업 준비",
+        "ACT 목표 250~300초 · DAPT 복용 확인",
+        "펄스 시 'stand clear' 역할 분담 · 팀 커뮤니케이션",
+        "금식·알레르기·동의서·신기능 확인",
       ],
       post: [
-        "충격파 후 흉통·리듬·혈압 변화 즉시 모니터링",
+        "펄스·확장 후 흉통·혈압·ECG 리듬 즉시 모니터",
+        "천공·층박리·대량 출혈 징후 보고",
+        "IVL pulse 총 횟수·병변 위치 차트 기록",
+        "이후 PCI(스텐트/DCB)·DAPT 계획 기록",
         "접근 부위 출혈·혈종·말초혈류 확인",
-        "이후 PCI(스텐트/DCB) 계획·항혈전 기록",
         "조영제 사용량·소변량·신기능 확인",
-        "퇴원 전 출혈·흉통 red flag 교육",
+        "퇴실 전 지속 흉통·출혈 red flag 교육",
       ],
     },
     keyPoints: [
-      "목적: 혈관 내 석회를 충격파로 균열",
-      "주요 적응: 심한 석회화 PCI 병변",
-      "보통 IVL 후 일반 풍선/스텐트 시술 이어감",
-      "펄스 전달 순간 환자 통증·리듬 확인",
-      "IVUS/조영으로 석회 범위·결과 평가",
+      "IVL = 혈관 내 석회를 sonic pulse로 균열",
+      "주요 적응: 심한 석회화 PCI (IVUS/OCT 확인)",
+      "흐름: IVL → NC balloon → DES/DCB (대부분)",
+      "펄스 시 stand clear · 흉통 일시적 흔함",
+      "ACT 250~300초 · pulse 횟수·위치 기록",
+      "최종 IVUS로 expansion·dissection 확인",
     ],
-    relatedItems: ["PCI", "DES", "IVUS", "DCB"],
-    tags: ["시술", "관상동맥", "석회화", "충격파"],
+    relatedItems: ["PCI", "DES", "IVUS", "DCB", "OCT"],
+    tags: ["시술", "관상동맥", "석회화", "충격파", "IVL"],
+  },
+  {
+    slug: "laa-closure",
+    title: "LAA Closure",
+    englishName: "Left Atrial Appendage Closure (LAAC)",
+    koreanName: "좌심이귀 폐쇄술 (LAA Closure)",
+    summary:
+      "심방세동 환자의 좌심이귀(LAA)를 기구로 막아 뇌졸중 위험을 줄이는 시술 — Watchman·Amulet 등, TEE 가이드 transseptal",
+    summaryEn:
+      "LAA closure seals the left atrial appendage in AF to reduce stroke risk — transseptal access with TEE guidance (Watchman, Amulet, etc.).",
+    definition: [
+      "**LAA Closure(Left Atrial Appendage Closure, LAAC, 좌심이귀 폐쇄술)** 는 **심방세동(AF)** 환자의 **좌심이귀(LAA)** 를 **카테터로 넣는 기구**로 물리적으로 막는 시술입니다.",
+      "**쉽게 말하면**: AF일 때 혈전이 잘 생기는 주머니가 **좌심이귀**입니다. 이 주머니 입구에 **플러그(폐쇄 기구)** 를 끼워 막으면, 혈전이 떨어져 나가 **뇌졸중**으로 가는 길을 줄일 수 있습니다. **장기 항응고(와파린·DOAC)가 어려운** AF 환자에게 대안이 됩니다.",
+      "**대표 기구**: **Watchman / Watchman FLX Pro**(Boston Scientific), **Amulet**(Abbott), **Lambre** 등. 기관·적응에 따라 선택.",
+      "**시술 요약**: **대퇴정맥** 접근 → **transseptal puncture**(중격 뚫기) → **좌심방** → **TEE + 조영**으로 LAA 크기 측정 → 기구 **deploy** → **PASS** 기준 확인 후 **release**.",
+      "**하면 안 되는 경우(예)**: LAA 내 **혈전**, 너무 작거나 큰 LAA(기구 불가), 활동성 감염, 시술 불가능한 해부.",
+      "한마디로, **'AF 환자 좌심이귀를 TEE 보면서 막아 뇌졸중을 예방하는 EP/structural lab 시술'** 입니다.",
+    ],
+    videos: [
+      {
+        youtubeId: "oD7_W28zjmg",
+        title: "LAA Closure / Watchman Implantation",
+        caption:
+          "좌심이귀 폐쇄(LAA Closure) 시술 영상 — transseptal 접근·LAA 기구 배치·deploy 흐름을 영상으로 확인. 아래 단계별 설명과 함께 보면 이해가 빨라집니다.",
+        sourceUrl: "https://youtu.be/oD7_W28zjmg",
+      },
+    ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "LAA Closure (YouTube)",
+    images: [
+      {
+        src: "/images/procedures/laa/laa-principle.svg",
+        alt: "LAA Closure 원리 - 좌심이귀 폐쇄로 뇌졸중 예방",
+        caption:
+          "**원리.** AF에서 혈전이 잘 생기는 LAA를 기구로 막아 뇌졸중 위험을 줄입니다. 항응고 대안이 될 수 있습니다.",
+      },
+    ],
+    imagesTitle: "그림으로 이해하기",
+    imagesSubtitle: "LAA Closure 원리",
+    stepsTitle: "시술 절차",
+    stepsSubtitle: "단계별 순서 + 그림",
+    measurementSteps: [
+      {
+        text: "**시술 전 준비** — **비판막 AF** 여부, **CHA₂DS₂-VASc** 점수, 출혈·낙상 위험(항응고 대안 필요성) 확인. **TEE**로 LAA **형태**(chicken-wing, windsock 등)·**ostium width·depth**·**혈전 유무** — 혈전 있으면 시술 연기. **항응고 중단 일정**(기관 프로토콜, 보통 시술 전 수일). **금식**, TEE **하강장 약**, 마취(전신/진정) 계획. 기구 키트(Watchman FLX Pro 등) 준비.",
+        image: {
+          src: "/images/procedures/laa/laa-step-prep.svg",
+          alt: "LAA Closure 시술 전 준비",
+          caption: "TEE 선행 · LAA 형태·혈전 확인.",
+        },
+      },
+      {
+        text: "**대퇴정맥 접근** — **대퇴정맥(femoral vein)** 에 sheath 삽입(보통 **8~14 Fr**, 기종·시스템별). IVC → 우심방 진입. **UFH** 투여 → **ACT 250~300초** 목표. 스크럽: ACT 결과 팀에 공유.",
+        image: {
+          src: "/images/procedures/laa/laa-step-access.svg",
+          alt: "대퇴정맥 접근",
+          caption: "Femoral vein · ACT 250~300s.",
+        },
+      },
+      {
+        text: "**Transseptal puncture** — **중격(transseptal)** 을 TEE·조영으로 안전하게 뚫어 **좌심방(LA)** 진입. **FO(foramen ovale)** 위치·바늘·와이어·중격 확장기 사용. 합병증: **중격 손상·대동맥 puncture** — TEE 필수. ACT 유지.",
+        image: {
+          src: "/images/procedures/laa/laa-step-transseptal.svg",
+          alt: "Transseptal puncture",
+          caption: "RA → LA · TEE·조영 가이드.",
+        },
+      },
+      {
+        text: "**LAA 조영 · TEE sizing** — LAA **조영(angio)** + **TEE**로 **landing zone** 측정: **ostium width**, **depth**, **circumference**. 기구 **크기 선택**(예: Watchman **21~35 mm**). LAA morphology에 따라 적합 기종·크기 달라짐. **pigtail** 또는 전용 catheter로 LAA deep cannulation.",
+        image: {
+          src: "/images/procedures/laa/laa-step-sizing.svg",
+          alt: "LAA sizing",
+          caption: "Ostium · depth → device size.",
+        },
+      },
+      {
+        text: "**Device 배치 · Deploy** — Access/delivery sheath를 **LAA 안**으로 진입. 기구를 **LAA 입구(ostium)** 에 맞추고 **천천히 전개(partial deploy)**. TEE로 위치·압박(compression) 실시간 확인. 필요 시 **recapture** 후 재배치.",
+        image: {
+          src: "/images/procedures/laa/laa-step-deploy.svg",
+          alt: "LAA device deploy",
+          caption: "Landing zone · partial deploy · TEE.",
+        },
+      },
+      {
+        text: "**PASS 확인 · Release** — **Watchman** 기준 **PASS**: **P**osition, **A**nchor, **S**ize, **S**eal. **Peridevice leak** <5 mm, **LAA occlusion** 충분한지 TEE. 기준 충족 시 **release(최종 고정)**. 불충족 시 retrieve·크기 변경.",
+        image: {
+          src: "/images/procedures/laa/laa-step-pass.svg",
+          alt: "PASS criteria TEE",
+          caption: "PASS · leak · occlusion %.",
+        },
+      },
+      {
+        text: "**마무리 · 회복** — 최종 **TEE·조영**(출혈·심낭삼출). Sheath 제거·hemostasis. **항혈소판** 시작(보통 **아스피린+클로피도그렐**, 기관·기종별). **추적 TEE**(약 **45일**)로 **endothelialization·폐쇄 완성** 확인. 회복실: **흉통·호흡곤란·신경학적 증상**(뇌졸중)·접근부위 출혈 모니터.",
+        image: {
+          src: "/images/procedures/laa/laa-step-close.svg",
+          alt: "LAA Closure 마무리",
+          caption: "항혈소판 · 추적 TEE · 합병증 모니터.",
+        },
+      },
+    ],
+    clinicalUse:
+      "EP lab·structural heart lab에서 AF 뇌졸중 예방 클리닉과 연계되는 시술입니다. **항응고 금기·불내성** AF 환자, 또는 환자 선택에 따라 **ablation과 동시** 시행하기도 합니다. 조영실·Cath lab 간호사는 LAA Closure 환자가 **관상동맥 조영**으로 올 때 **기구 유무·현재 항혈전·최근 TEE 폐쇄 결과**를 확인해야 합니다. 시술 당일은 **TEE·transseptal·대퇴정맥** 접근이 핵심입니다.",
+    nursingCare: {
+      pre: [
+        "AF 여부·CHA₂DS₂-VASc·항응고 복용·중단 일정",
+        "선행 TEE — LAA 크기·형태·혈전 없음 확인",
+        "금식·TEE 하강장 약·마취 계획",
+        "대퇴정맥 접근 부위 사정",
+        "ACT 목표·헤파린 준비",
+        "Watchman/Amulet 키트·크기 목록 확인",
+      ],
+      post: [
+        "접근 부위 출혈·혈종·말초혈류 반복 확인",
+        "TEE 후 구강·삼킴·호흡·저산소 모니터",
+        "흉통·호흡곤란 → 심낭삼출 의심 즉시 보고",
+        "의식·말·사지 약함 → 뇌졸중 의심",
+        "항혈소판 시작 시각·종류 기록",
+        "추적 TEE(약 45일) 예약·교육",
+        "기구 크기·종류·PASS 결과 차트 기록",
+      ],
+    },
+    keyPoints: [
+      "목적: AF 환자 LAA 폐쇄 → 뇌졸중 위험↓",
+      "경로: 대퇴정맥 → transseptal → LA → LAA",
+      "TEE + 조영 가이드 필수",
+      "Watchman PASS 후 release",
+      "시술 후 항혈소판 + 추적 TEE",
+      "합병증: 심낭삼출, LAA 천공, 뇌졸중",
+    ],
+    relatedItems: [
+      "S/p Watchman Device",
+      "LAA",
+      "Atrial Fibrillation",
+      "TEE",
+      "Transseptal Puncture",
+      "DAPT",
+    ],
+    tags: ["시술", "구조적", "AF", "LAA", "Watchman", "뇌졸중예방", "EP"],
   },
   {
     slug: "watchman-device",
@@ -814,7 +1120,12 @@ export const procedures: KnowledgeArticle[] = [
       "시술 후 항혈소판 치료 + 추적 TEE로 폐쇄 완성 확인",
       "조영실 주의: 항혈전 종류/기간, 출혈 위험, 기구 위치 병력 확인",
     ],
-    relatedItems: ["Atrial Fibrillation", "TEE", "Transseptal Puncture"],
+    relatedItems: [
+      "LAA Closure",
+      "Atrial Fibrillation",
+      "TEE",
+      "Transseptal Puncture",
+    ],
     tags: ["시술", "구조적", "AF", "뇌졸중예방"],
   },
   {
@@ -833,6 +1144,18 @@ export const procedures: KnowledgeArticle[] = [
       "대표 기종으로 HeartMate, HeartWare 등이 있으며, RPM(회전수), flow(유량), power(전력), pulsatility index(맥동 지수) 등을 모니터링합니다.",
       "한마디로, '약해진 왼심실을 기계 펌프로 보조하는 심장 수술'입니다.",
     ],
+    videos: [
+      {
+        youtubeId: "_vma7myqIyo",
+        title:
+          "3D Medical Device Animation: Heartware System LVAD Pump | AXS Studio",
+        caption:
+          "HeartWare LVAD 펌프 구조·작동 원리 3D 애니메이션 — inflow/outflow 연결과 펌프가 피를 밀어 주는 흐름을 영상으로 확인할 수 있습니다.",
+        sourceUrl: "https://youtu.be/_vma7myqIyo",
+      },
+    ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "LVAD 펌프 작동 원리 (YouTube)",
     measurementSteps: [
       "시술 전: 심부전 중증도, 심장이식 대기 여부, 간·신기능, 항응고 상태, 감염 여부를 확인합니다.",
       "심초음파·우심카테터 등으로 심장 기능·폐동맥 압·혈관 저항을 평가합니다.",
@@ -970,7 +1293,7 @@ export const procedures: KnowledgeArticle[] = [
         src: "/images/anatomy/cabg-graft-overview.svg",
         alt: "CABG 이식 혈관 연결 도해",
         caption:
-          "이식 혈관별 연결 관계. 해부학 상세는 '심혈관 해부학 → CABG 이식 혈관' 항목 참고.",
+          "이식 혈관별 연결 관계. 해부학 상세는 '심혈관 해부생리학 → CABG 이식 혈관' 항목 참고.",
       },
     ],
     imagesTitle: "수술 도해",
@@ -1103,6 +1426,333 @@ export const procedures: KnowledgeArticle[] = [
     tags: ["시술", "CABG", "LHC", "조영실", "요골", "접근"],
   },
   {
+    slug: "coronary-sinus-reducer",
+    title: "Coronary Sinus Reducer",
+    englishName: "Coronary Sinus Reducer Implantation",
+    koreanName: "관상정맥류 Reducer 삽입술",
+    summary:
+      "PCI·CABG를 더 못 하는 난치성 협심증 환자에게, 심장 뒤쪽 정맥(관상정맥류)을 살짝 좁혀 허혈 심근으로 혈을 돌려주는 시술",
+    summaryEn:
+      "For refractory angina when PCI/CABG is no longer an option: a hourglass mesh device narrows the coronary sinus to redirect blood flow toward ischemic myocardium.",
+    definition: [
+      "**Coronary Sinus Reducer(관상정맥류 Reducer)** 는 **PCI나 CABG로 혈관을 넓히는 시술이 아닙니다.** 대신 심장 **뒤쪽에 있는 큰 정맥 — 관상정맥류(coronary sinus, CS)** 안에 **모래시계 모양 스텐트**를 넣어, 그 정맥을 **살짝 좁혀** 혈이 덜 빠져나가게 합니다.",
+      "**쉽게 말한 원리**: 심장이 허혈(혈이 부족)하면 **겉(심외막)보다 속(심내막)이 먼저 굶주립니다.** Reducer로 CS 정맥압을 올리면, **덜 허혈한 쪽에서 더 허혈한 심내막 쪽으로 혈이 다시 분배**됩니다. 비유하면 **'배수구를 살짝 막아 물이 가장 마른 곳으로 흐르게 하는 것'** 과 비슷합니다.",
+      "**누가 받나**: **난치성 협심증** — 협심증 약을 최대로 써도(CCS II~IV) 흉통이 남고, **PCI·CABG를 더 할 수 없다**고 heart team이 판단한 환자. 부하검사·CMR 등으로 **허혈이 객관적으로 확인**된 경우가 좋습니다.",
+      "**왜 필요한가**: PCI·CABG를 여러 번 했거나, 혈관이 너무 곳곳 막혀 **더 이상 뚫을 곳이 없는** 환자가 늘고 있습니다. 이들에게 Reducer는 **남은 혈류를 허혈 심근 쪽으로 돌려주는** 대안입니다.",
+      "**하면 안 되는 경우**: ① 우심방압이 이미 높음(RA mean **≥15 mmHg**) ② **양심실 pacing lead가 CS 안에** 있는 경우 ③ **심한 심부전**(LVEF <30~35%) ④ **최근 3개월 내 PCI/CABG** ⑤ **RCA만 허혈** ⑥ **허혈 증거 없는 흉통**",
+      "한마디로, **'더 이상 PCI/CABG 못 하는 난치성 협심증 환자의 관상정맥류를 좁혀, 허혈 심근에 혈을 돌려주는 시술'** 입니다. 효과는 **1~3개월 후** 서서히 나타나는 경우가 많습니다.",
+    ],
+    videos: [
+      {
+        youtubeId: "8z2Au8JCXlc",
+        title: "Neovasc Reducer Animation — Synapse Medical Animation",
+        caption:
+          "Coronary Sinus Reducer 시술 애니메이션 — CS 내 hourglass device 배치·혈류 재분배 원리. 우측 IJ 접근·deploy 흐름 이해용.",
+        sourceUrl: "https://youtu.be/8z2Au8JCXlc",
+      },
+    ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "Coronary Sinus Reducer (YouTube)",
+    images: [
+      {
+        src: "/images/procedures/csr/csr-principle.svg",
+        alt: "Coronary Sinus Reducer 원리 - CS 좁혀서 허혈 심내막으로 혈류 재분배",
+        caption:
+          "**원리 한눈에.** PCI/CABG는 막힌 동맥을 뚫는 시술이고, Reducer는 **정맥을 좁혀** 허혈 심내막으로 혈을 돌려줍니다. 효과는 보통 1~3개월 후 나타납니다.",
+      },
+      {
+        src: "/images/procedures/csr/csr-device.svg",
+        alt: "Reducer 장치 - 모래시계 모양 스테인리스 스틸 메쉬",
+        caption:
+          "**장치 모양.** 스테인리스 스틸 메쉬, 가운데(목) 약 3mm로 좁아지는 **모래시계** 형태. 풍선으로 펼쳐 CS에 고정하고, 1~3개월 뒤 조직이 덮이면서 좁아진 상태가 유지됩니다.",
+      },
+      {
+        src: "/images/procedures/csr/coronary-sinus-anatomy.png",
+        alt: "관상정맥류(Coronary Sinus) 해부 위치",
+        caption:
+          "**관상정맥류 위치.** 심장 뒤쪽, 좌심실과 좌심방 사이에 있는 큰 정맥. 심근의 혈이 모여 대정맥으로 들어갑니다. 출처: Wikimedia Commons, xranatomy.com, CC BY-SA 4.0.",
+      },
+    ],
+    imagesTitle: "그림으로 이해하기",
+    imagesSubtitle: "원리 · 장치 · 해부",
+    measurementSteps: [
+      {
+        text: "**시술 전 준비** — heart team이 환자를 선별했는지 확인합니다. 협심증 약 최대인데도 흉통이 남는지(CCS class), 허혈 검사 결과, **DAPT**(아스피린 72시간 전부터 + P2Y12) 복용 여부를 봅니다. 국소마취만으로 가능하고, **우측 경정맥** 접근을 계획합니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-prep.svg",
+          alt: "시술 전 준비 - 환자 선별과 금기",
+          caption: "선별 체크와 하면 안 되는 경우.",
+        },
+      },
+      {
+        text: "**우측 경정맥 접근** — 초음파 보면서 **우측 목 정맥(IJ)** 에 바늘을 넣고 **9 Fr sheath** 를 삽입합니다. sheath 넣은 뒤 **UFH 100 U/kg** 을 투여합니다. PCI처럼 대퇴동맥이 아니라 **목에서 들어가는** 시술입니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-access.svg",
+          alt: "우측 경정맥 접근 - 9Fr sheath",
+          caption: "목(우측 IJ) → 심장으로 들어갑니다.",
+        },
+      },
+      {
+        text: "**우심방압(RA) 측정** — catheter로 우심방에 들어가 **평균압** 을 잽니다. **15 mmHg 이상** 이면 시술을 **중단**합니다(이미 정맥압이 높아서 CS를 좁혀도 이득이 적음). **15 미만** 이면 다음 단계로 갑니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-ra-pressure.svg",
+          alt: "우심방압 측정 - 15mmHg 이상이면 중단",
+          caption: "RA mean ≥15 → 시술 중단.",
+        },
+      },
+      {
+        text: "**관상정맥류(CS) 진입** — **LAO 30°** 로 조영하면서 catheter로 **CS 입구(ostium)** 를 찾습니다. **0.035\" wire** 를 CS 안쪽(원위, great cardiac vein 방향)으로 보냅니다. 입구가 어려우면 Amplatz Left 등 다른 catheter로 바꿉니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-cs-entry.svg",
+          alt: "관상정맥류 진입 - CS ostium",
+          caption: "CS 입구를 찾아 wire를 안쪽으로.",
+        },
+      },
+      {
+        text: "**CS 조영(venography)** — CS 안을 조영해서 **Reducer를 넣을 위치** 를 정합니다. **입구에서 1.5~3 cm 원위**, **가지혈관(side branch) 피하기**, 뼈 landmark로 위치를 확인합니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-venography.svg",
+          alt: "CS venography - landing zone 선정",
+          caption: "입구에서 1.5~3 cm 원위가 이상적.",
+        },
+      },
+      {
+        text: "**9 Fr guide 교환 + Reducer 전달** — **9 Fr straight guide** 로 바꾸고, Reducer가 달린 **풍선 catheter** 를 wire 위로 CS 원위까지 보냅니다. guide 끝에서 device가 **몇 mm 돌출**된 상태로 같이 전진합니다(혈관 손상 방지). 어려운 해부학에서는 **mother-and-child** 기법(5 Fr MP inside 9 Fr)을 씁니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-guide.svg",
+          alt: "9Fr guide와 Reducer 전달",
+          caption: "guide 안에서 Reducer+풍선을 원위까지 전달.",
+        },
+      },
+      {
+        text: "**Reducer 배포(펼치기)** — 풍선을 **4~6 atm** 으로 **최소 60초** 팽창시킵니다. CS 직경보다 **10~20% 크게(oversizing)** 펼쳐서 이탈을 막습니다. radiopaque marker와 뼈 landmark로 위치를 다시 확인합니다. 이 단계에서 **일시적 부정맥** 이 나올 수 있습니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-deployment.svg",
+          alt: "Reducer 배포 - 풍선 4~6atm 60초",
+          caption: "풍선으로 모래시계 스텐트를 펼칩니다.",
+        },
+      },
+      {
+        text: "**풍선만 빼기** — Reducer는 CS에 **남기고** 풍선만 천천히 후퇴합니다. **2인이 협력**하는 것이 좋습니다: guide tip을 scaffold의 **좁은 목(neck)** 에 밀착 지지한 채 풍선을 빼면 device가 같이 빠지는 것을 방지합니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-retrieval.svg",
+          alt: "풍선 후퇴 - Reducer는 남김",
+          caption: "Reducer는 그대로, 풍선만 천천히 후퇴.",
+        },
+      },
+      {
+        text: "**최종 확인 & 마무리** — 다시 CS를 조영해서 Reducer 위치, **천공(perforation)·이탈(migration)** 이 없는지 봅니다. 문제 없으면 sheath를 빼고 압박합니다. **DAPT 최소 1개월** 유지하고, 증상 개선은 **1~3개월** 걸릴 수 있다고 환자에게 안내합니다.",
+        image: {
+          src: "/images/procedures/csr/csr-step-final.svg",
+          alt: "최종 venography와 마무리",
+          caption: "위치 확인 → DAPT 1개월 → 효과는 서서히.",
+        },
+      },
+    ],
+    stepsTitle: "시술 절차",
+    stepsSubtitle: "단계별 순서 + 그림",
+    clinicalUse:
+      "구조적/관상 조영실에서 **난치성 협심증 클리닉** 과 연계해 시행합니다. PCI·CABG와 달리 **관상동맥을 넓히지 않으므로**, 팀원 모두가 '혈관성형술이 아니라 **정맥계 시술**'임을 알아야 합니다. COSIRA trial 등에서 증상(CCS)·삶의 질 개선이 보고되었습니다. **환자 선별**(RA압, 허혈 범위, 최근 revascularization)이 성공의 핵심입니다.",
+    nursingCare: {
+      pre: [
+        "heart team 선별·동의서·CCS class·허혈 검사 결과 확인",
+        "DAPT(아스피린 72h+ + P2Y12) 복용 상태 확인",
+        "RA pressure·LVEF·최근 PCI/CABG(3개월) 여부 확인",
+        "Biventricular pacing lead(CS 내) 유무 — 금기",
+        "우측 경정맥 접근 — 초음파 유도 준비, 국소마취",
+        "UFH·Reducer kit·9 Fr guide·응급(perforation) 준비",
+      ],
+      post: [
+        "경정맥 접근 부위 출혈·혈종·목 부종·호흡곤란 모니터",
+        "시술 중 저혈압·흉통·부정맥 발생 시 즉시 보고",
+        "CS perforation 의심 시: protamine·balloon tamponade·심낭천자 준비",
+        "DAPT **최소 1개월** — 처방·복용 교육",
+        "증상 개선은 1~3개월에 걸릴 수 있음 — 기대치 교육",
+        "퇴원 시 wallet card(장치·제조사·24h 연락처) 확인",
+      ],
+    },
+    keyPoints: [
+      "PCI/CABG가 아님 — CS 정맥을 좁혀 혈을 재분배",
+      "적응: 난치성 협심증 + 더 이상 revascularization 불가",
+      "원리: CS narrowing → 심내막으로 혈류 돌림",
+      "접근: 우측 경정맥 9 Fr (목에서 들어감)",
+      "금기: RA mean ≥15, CS pacing lead, 심부전, 최근 3개월 PCI/CABG",
+      "배포: 4~6 atm, 60초, 10~20% oversizing",
+      "효과: 1~3개월 후 서서히 (바로 안 나와도 실패 아님)",
+      "시술 후 DAPT 최소 1개월",
+    ],
+    relatedItems: [
+      "PCI",
+      "CABG",
+      "Refractory Angina",
+      "CCS Class",
+      "DAPT",
+      "Antiplatelet Agents",
+    ],
+    tags: ["시술", "관상동맥", "난치성협심증", "관상정맥류", "Reducer", "구조적"],
+  },
+  {
+    slug: "renal-denervation",
+    title: "Renal Denervation",
+    englishName: "Renal Denervation (RDN)",
+    koreanName: "신장 신경 절제술 (Renal Denervation)",
+    summary:
+      "난치성 고혈압 환자의 신장동맥 주변 교감신경을 RF·초음파로 절단(ablate)해 혈압을 낮추는 카테터 시술 — Symplicity Spyral·Paradise 등",
+    summaryEn:
+      "Renal denervation ablates renal sympathetic nerves via the renal arteries to lower blood pressure in resistant hypertension — Symplicity Spyral (RF), Paradise (ultrasound), and similar systems.",
+    definition: [
+      "**Renal Denervation(RDN, 신장 신경 절제술)** 은 **신장동맥 벽 주변의 교감신경(renal sympathetic nerves)** 을 카테터로 **에너지(RF 또는 초음파)** 를 보내 **절단(ablate)** 하여 **혈압을 낮추는** 시술입니다.",
+      "**쉽게 말하면**: 신장 쪽 교감신경이 **과활성**이면 혈관이 조이고 혈압이 오릅니다. RDN은 **'과열된 보일러 밸브를 조금 내려 압력을 줄이는 것'** 과 비슷합니다. **약물만으로 혈압이 안 잡히는** 환자에게 대안이 됩니다.",
+      "**누가 받나**: **난치성(resistant) 고혈압** — 생활습관·**3종 이상** 항고혈압제를 써도 목표 혈압 미달, 또는 약물 부작용으로 치료가 어려운 환자. **CT/MRA** 로 신장동맥 해부가 적합한지 미리 확인합니다.",
+      "**대표 장치**: **Medtronic Symplicity Spyral**(RF, 4-electrode helix) · **Recor Paradise**(초음파, cooling) · 기관·국가별 승인·도입 상태는 다릅니다. 여기서는 **가장 흔한 RF(Spyral) 흐름**을 중심으로 정리합니다.",
+      "**원리**: 신장동맥 **지방조직( adventitia )** 안에 지나는 교감신경을 **선택적으로 가열** → **effrent·afferent** 신경 신호↓ → **전신 혈압↓**. 효과는 **즉시가 아니라 수주~수개월**에 걸쳐 나타나는 경우가 많습니다.",
+      "**하면 안 되거나 주의**: **중증 신장동맥 협착(RAS)**, **FMD**, **신장동맥류**, **이전 renal stent**, **단일 신장**, **eGFR <40** 등 — CT/MRA·팀 선별로 제외. ablation 중 **옆구리 열감(flank heat)** → **진정(midazolam/fentanyl)** 필요.",
+      "한마디로, **'대퇴에서 들어가 양쪽 신장동맥 신경을 ablate해 혈압을 낮추는 시술'** 입니다.",
+    ],
+    videos: [
+      {
+        youtubeId: "YPyTPdJP3OM",
+        title: "Radiofrequency Renal Denervation Procedure — Medtronic",
+        caption:
+          "Symplicity Spyral RF renal denervation 시술 소개 — helix catheter·G3 generator·4-quadrant ablation. 아래 단계별 설명과 함께 보면 이해가 빨라집니다.",
+        sourceUrl: "https://youtu.be/YPyTPdJP3OM",
+      },
+      {
+        youtubeId: "qToVkMGiEjk",
+        title:
+          "Symplicity Spyral RDN in Practice — EuroPCR",
+        caption:
+          "실제 cath lab에서의 aortogram·guide·ablation·impedance 모니터링 실무 팁.",
+        sourceUrl: "https://youtu.be/qToVkMGiEjk",
+      },
+    ],
+    videosTitle: "참고 영상",
+    videosSubtitle: "Renal Denervation (YouTube)",
+    images: [
+      {
+        src: "/images/procedures/rdn/rdn-principle.svg",
+        alt: "Renal Denervation 원리 - 신장동맥 교감신경 ablation으로 혈압 감소",
+        caption:
+          "**원리 한눈에.** 교감신경 과활성 → BP↑ → renal artery에서 RF/초음파 ablation → 신경 신호↓ → BP↓ (점진적).",
+      },
+      {
+        src: "/images/procedures/rdn/renal-artery-anatomy.png",
+        alt: "신장·신장동맥 해부 - Gray anatomy",
+        caption:
+          "**신장동맥 해부.** Aorta에서 분지하는 renal artery가 kidney hilum으로 들어감. RDN은 이 artery wall 주변 신경을 치료. 출처: Wikimedia Commons, Henry Vandyke Carter (Gray's Anatomy), Public Domain.",
+      },
+    ],
+    imagesTitle: "그림으로 이해하기",
+    imagesSubtitle: "원리 · 해부",
+    stepsTitle: "시술 절차",
+    stepsSubtitle: "단계별 순서 + 그림 (Symplicity Spyral RF 기준)",
+    measurementSteps: [
+      {
+        text: "**시술 전 준비** — **resistant HTN** 선별: 3종+ 항고혈압제에도 office/24h BP 목표 미달. **CT/MRA** 로 bilateral renal artery **Ø3~8 mm** (치료 가능), **accessory renal artery** 유무, **RAS·FMD·aneurysm** 배제. 스크럽: **Symplicity Spyral catheter**, **G3 RF generator**, **grounding pad(dispersive electrode)**, **6 Fr guide 45~90 cm**(IMA/LIMA·RDC/RDND1 shape), **0.014\" workhorse wire**(non-hydrophilic, supportive). **항고혈압제는 보통 유지**(시술 후 조정).",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-prep.svg",
+          alt: "RDN 시술 전 준비",
+          caption: "Resistant HTN · CT/MRA · Spyral kit · 금기 확인.",
+        },
+      },
+      {
+        text: "**대퇴동맥 접근** — **초음파 유도** common femoral puncture 권장. **6~8 Fr sheath** 삽입 → aorta. **UFH** 투여 → **ACT >250초**(기관·프로토콜별, SPYRAL trial 기준). 스크럽이 ACT 결과를 팀에 말합니다. **니트로글리세린(NTG)** intra-arterial — renal spasm 예방(의사 처방).",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-access.svg",
+          alt: "대퇴동맥 접근",
+          caption: "Femoral · 6~8 Fr · ACT >250s.",
+        },
+      },
+      {
+        text: "**대동맥 조영(Aortogram)** — **Pigtail** catheter를 **L1-L2 junction** 에 두고 aortogram. **양쪽 renal artery** + **accessory branch** 개수·각도·직경(Ø3~8 mm) 확인. pre-imaging 없을 때 필수. contrast **50/50 dilution**, rate/time은 기관·촬영기 설정 따름.",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-aortogram.svg",
+          alt: "Aortogram으로 신장동맥 평가",
+          caption: "L1-L2 · accessory renal · Ø3~8mm.",
+        },
+      },
+      {
+        text: "**선택적 신장동맥 조영** — **6 Fr guide catheter**(보통 **55 cm**, coronary용보다 짧음 — RDN catheter shaft 길이 때문)로 **한쪽 renal artery** 에 engagement. **Selective renal angiography** 로 **dissection·significant stenosis·aneurysm** 재확인. 좌측 down-sloping takeoff는 **RDC/RDND1** shape가 유리할 수 있음. **NTG** spasm 예방.",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-selective-angio.svg",
+          alt: "선택적 신장동맥 조영",
+          caption: "6F guide · selective angio · spasm 예방.",
+        },
+      },
+      {
+        text: "**Spyral 카테터 배치** — **0.014\" wire** 를 **distal branch** 까지 advance (hydrophilic wire 피함). **Symplicity Spyral catheter**(6 Fr compatible, rapid exchange)를 wire 위로 넣고, **wire를 retract** 하면 **helix(4 electrode)** 가 artery wall에 **자연스럽게 conform** (혈류 complete occlusion 아님). **치료 순서**: **distal branch → proximal main** (신경 density distal↑). **Ø3~8 mm** artery만 치료.",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-catheter.svg",
+          alt: "Spyral catheter 배치",
+          caption: "Wire distal → Spyral deploy → 4-quadrant contact.",
+        },
+      },
+      {
+        text: "**RF Ablation (에너지 전달)** — **Symplicity G3 generator** + **grounding pad**. **4 electrode 동시 RF** — 보통 **~60초/cycle** (제조사 프로토콜). Generator가 **impedance·temperature** 실시간 표시: **impedance↓ + temperature↑** = electrode contact OK. **Distal→proximal** 로 catheter reposition — **이전 ablation set보다 ≥5 mm proximal** 간격. electrode contact loss 시 **개별 electrode off/on** 가능. ablation 중 환자 **flank heat** → **midazolam/fentanyl**.",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-ablation.svg",
+          alt: "RF ablation 에너지 전달",
+          caption: "G3 · 60s · impedance/temp · distal→proximal.",
+        },
+      },
+      {
+        text: "**반대쪽 신장 + accessory artery** — **Contralateral renal artery** 에 동일 절차 반복. **Accessory renal artery**(Ø3~8 mm)도 **main과 같은 innervation pattern** → 치료 대상. branch **먼저** → **main vessel** 순서. bilateral 완료까지 **평균 시술 시간 ~90~100분**(trial 기준).",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-contralateral.svg",
+          alt: "반대쪽 신장 및 accessory artery 치료",
+          caption: "Bilateral · accessory branch · 진정.",
+        },
+      },
+      {
+        text: "**최종 조영 · 마무리** — 양측 **final selective renal angiography**: **dissection·spasm·flow limitation** 없는지 확인. **신장동맥 stenosis** acute worsening 없음. Sheath 제거 → **groin hemostasis**(manual·closure device). 회복실: **BP·HR·groin· flank pain·신기능(Cr)** 모니터. **혈압 하강은 수주~수개월** — 환자에게 **약물은 당분간 유지**, 외래에서 taper는 의사 판단.",
+        image: {
+          src: "/images/procedures/rdn/rdn-step-final.svg",
+          alt: "최종 조영과 마무리",
+          caption: "Final angio · hemostasis · BP follow-up.",
+        },
+      },
+    ],
+    clinicalUse:
+      "고혈압 클리닉·interventional hypertension program·일부 Cath Lab에서 시행합니다. PCI와 달리 **coronary가 아니라 renal artery** 를 치료하며, **양측 bilateral** ablation이 표준입니다. 조영실 간호·기술자는 **ACT >250s**, **aortogram·accessory renal** 기록, **ablation cycle 횟수·측(좌/우)** , **진정제·flank pain** 을 차트에 남깁니다. **Paradise ultrasound RDN** 은 cooling·circumferential ultrasound로 프로토콜이 다르지만, **접근·aortogram·bilateral** 큰 흐름은 유사합니다.",
+    nursingCare: {
+      pre: [
+        "Resistant HTN 선별·CT/MRA renal anatomy 결과 확인",
+        "항고혈압제 복용 목록·마지막 BP(office·24h ABPM) 기록",
+        "신기능(Cr/eGFR) · contrast allergy · 금식 확인",
+        "Spyral catheter·G3 generator·grounding pad 작동 점검",
+        "6 Fr guide·0.014\" wire · ACT 목표 >250s 확인",
+        "진정(midazolam/fentanyl) 준비 · flank heat 설명",
+      ],
+      post: [
+        "ACT·총 heparin 용량·ablation cycle(좌/우) 기록",
+        "Groin 출혈·혈종·발 말초혈류 모니터",
+        "Flank pain·구역·저혈압·서맥 즉시 보고",
+        "조영제 사용량·소변량·Cr 추적(신독성)",
+        "혈압↓는 즉시 기대하지 않음 — 수주~수개월 follow-up 안내",
+        "항고혈압제 **임의 중단 금지** — 외래 조정",
+        "퇴실 전 groin·flank red flag 교육",
+      ],
+    },
+    keyPoints: [
+      "RDN = renal sympathetic nerve ablation → BP↓",
+      "적응: resistant HTN (약물 3종+에도 미달)",
+      "접근: femoral · bilateral renal artery",
+      "Spyral: RF · 4 electrode · ~60s/cycle",
+      "ACT >250s · distal→proximal ablation",
+      "BP 효과: 수주~수개월 · 약물 유지 후 조정",
+    ],
+    relatedItems: [
+      "동맥 해부 — 팔·하지·심장",
+      "베타블로커",
+      "이뇨제",
+      "Nitroglycerin",
+      "UFH",
+      "ACT",
+      "Resistant Hypertension",
+    ],
+    tags: ["시술", "고혈압", "RDN", "신장동맥", "RF", "조영실"],
+  },
+  {
     slug: "tilt-table-test",
     title: "Tilt-Table Test",
     englishName: "Head-Up Tilt Table Test",
@@ -1145,8 +1795,10 @@ export const procedures: KnowledgeArticle[] = [
       post: [
         "supine 복귀 후 BP·HR·의식·증상 회복까지 모니터",
         "실신·presyncope 발생 시 시각·혈압·HR 기록",
-        "회복 후 기립 시 재어지럼 여부 확인",
-        "충분한 수분 섭취·낙상 주의 교육",
+        "검사 후 어지럼·두통·전신통 호소 시 → **'경사대 검사 후 어지럼·두통·전신 통증'** 간호 항목 참고",
+        "NTG·이소프로테레놀 사용 시 두통·떨림·어지럼 더 흔함 — 차트에 기록",
+        "회복 후 기립 시 재어지럼 여부 확인 — 천천히 기립",
+        "충분한 수분 섭취·당일 운전 금지·낙상 주의 교육",
         "결과 설명·외래 추적·치료 계획 안내",
       ],
     },
@@ -1159,6 +1811,7 @@ export const procedures: KnowledgeArticle[] = [
       "양성 → 생활요법·약물·필요 시 pacemaker 검토",
     ],
     relatedItems: [
+      "경사대 검사 후 어지럼·두통·전신 통증",
       "Vasovagal 반응 대응",
       "Syncope",
       "Vasovagal Syncope",

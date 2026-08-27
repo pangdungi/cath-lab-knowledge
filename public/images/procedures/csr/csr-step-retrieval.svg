@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="풍선 후퇴">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">9단계 — 풍선만 빼기 (Reducer는 남김)</text>
+  <path d="M100 150 C300 140 450 145 580 155" stroke="#1d4ed8" stroke-width="8" fill="none"/>
+  <ellipse cx="350" cy="143" rx="14" ry="20" fill="#fff" stroke="#0f766e" stroke-width="4"/>
+  <path d="M350 100 L350 190" stroke="#ca8a04" stroke-width="4" stroke-dasharray="6 4"/>
+  <text x="360" y="120" font-family="Arial,sans-serif" font-size="10" fill="#ca8a04">풍선 후퇴</text>
+  <rect x="80" y="190" width="540" height="50" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="100" y="220" font-family="Arial,sans-serif" font-size="11" fill="#9a3412">2인 협력 권장 — guide tip을 narrow neck에 지지한 채 천천히 후퇴 (device 이탈 방지)</text>
+</svg>

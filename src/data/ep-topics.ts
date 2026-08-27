@@ -202,26 +202,74 @@ export const epTopics: KnowledgeArticle[] = [
     ],
     images: [
       {
-        src: "/images/ep/mi-ecg-stemi-patterns.svg",
-        alt: "STEMI 부위별 ECG ST 변화 - Anterior, Inferior, Lateral, Posterior, V4R",
+        src: "/images/ep/mi-ecg/contiguous-leads-territory.svg",
+        alt: "12-lead ECG 리드 그리드 - 부위별 색상 매핑 (Contiguous leads)",
         caption:
-          "부위별 ST segment 패턴 예시. 주황 = ST elevation(STEMI) · 보라 = ST depression(후벽 간접 소견). Anterior(V1-V4) · Inferior(II,III,aVF) · Lateral(I,aVL,V5-V6) · Posterior(V1-V3 ST↓, V7-V9 ST↑) · RV(V4R).",
+          "**12-lead 리드 배치 + 부위별 색상.** 주황=중격(V1-V2) · 파랑=전벽(V3-V4) · 노랑=하벽(II,III,aVF) · 초록=측벽(I,aVL,V5-V6) · 분홍=aVR. **인접 유도(contiguous)** 2개 이상 ST↑ = 해당 territory STEMI. 출처: Wikimedia Commons, Cburnett, CC BY-SA 3.0.",
       },
       {
-        src: "/images/ep/mi-ecg-12lead-anterior.svg",
-        alt: "12-lead ECG Anterior STEMI 예시 - V2-V4 ST elevation, inferior reciprocal ST depression",
+        src: "/images/ep/mi-ecg/mi-regions-overview.jpg",
+        alt: "심근경색 부위별 ECG 유도 매핑 - ECGpedia MI regions",
         caption:
-          "전벽 STEMI 12-lead 배치 예시: V2-V4 ST↑가 두드러지고, 하벽 유도(II, III, aVF)에 역변화 ST↓가 동반될 수 있습니다(LAD 폐색 패턴).",
+          "**ECGpedia MI regions 개요도.** 심장 벽면(전벽·측벽·하벽·중격)과 **어느 ECG 유도가 그 부위를 보는지** 한눈에 연결. LAD→전벽·중격 · RCA→하벽 · LCx→측벽. 출처: Wikimedia Commons, CardioNetworks ECGpedia, CC BY-SA 3.0.",
       },
       {
-        src: "/images/ep/mi-ecg-locations.svg",
-        alt: "심근경색 부위별 ECG 유도 매핑 - Anterior, Inferior, Lateral, Posterior",
+        src: "/images/ep/mi-ecg/coronary-arteries-territory.png",
+        alt: "관상동맥 해부와 혈관 공급 영역 - LAD RCA LCx",
         caption:
-          "STEMI 부위별 대표 유도와 관상동맥 연관: Anterior(V1-V4, LAD) · Inferior(II,III,aVF, RCA) · Lateral(I,aVL,V5-V6, LCx) · Posterior(V7-V9).",
+          "**관상동맥 위치 + 공급 영역.** **LAD(좌전하행지)** = 전벽·중격(V1-V4) · **RCA(우관상동맥)** + PDA = 하벽(II,III,aVF) · **LCx(좌회선지)** = 측벽(I,aVL,V5-V6). ECG ST↑ 유도 → 의심 혈관 연결의 해부학 기준. 출처: Wikimedia Commons, Patrick J. Lynch / Mikael Häggström, CC BY-SA 3.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/heart-anterolateral-infarct-ecgpedia.png",
+        alt: "3D 심장 전측벽 괴사 영역 시각화 - ECGpedia",
+        caption:
+          "**3D 심장 + 괴사 영역(하이라이트).** 전측벽(anterolateral) MI 시 **LAD 공급 부위**가 어디인지 입체적으로 표시. 이 부위 괴사 → V1-V6, I, aVL ST↑ 패턴. 출처: Wikimedia Commons, CardioNetworks ECGpedia / R.C.B. Kreuger, CC BY-SA 3.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/stemi-color-coded-leads.jpg",
+        alt: "색상 코딩 STEMI 12-lead - 전벽 ST elevation 주황, 하벽 역변화 파랑",
+        caption:
+          "**색상 코딩 STEMI 예시.** 주황=ST elevation(전벽 V2-V5, I, aVL) · 파랑=역변화 ST depression(하벽 II,III,aVF). 전벽 STEMI에서 하벽 유도에 reciprocal ST↓가 동반되는 전형 패턴. 출처: Wikimedia Commons, Displaced, Public Domain.",
+      },
+      {
+        src: "/images/ep/mi-ecg/anterior-v2-4-stemi.jpg",
+        alt: "실제 12-lead ECG - 전벽 STEMI V2-V4 ST elevation",
+        caption:
+          "**전벽 STEMI 실제 심전도.** V2-V4에서 **ST elevation** 이 두드러집니다(LAD 폐색 패턴). 전흉 유도 2개 이상 연속 ST↑ = 전벽 STEMI 의심. 출처: Wikimedia Commons, Med Chaos, CC BY-SA 4.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/anterior-stemi.jpg",
+        alt: "실제 12-lead ECG - 전벽 STEMI ST elevation",
+        caption:
+          "**전벽 STEMI 실제 12-lead.** 내원 시 촬영 ECG — 전벽 유도 ST elevation. Cureus 사례. 출처: Cureus 2018;10(4):e2523, CC BY 4.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/inferior-stemi.jpg",
+        alt: "실제 12-lead ECG - 하벽 STEMI II III aVF ST elevation",
+        caption:
+          "**하벽 STEMI 실제 심전도.** II, III, aVF에서 **ST elevation**(Pardee wave) · 전측벽 유도에 **역변화 ST depression** 동반. 의심 혈관: RCA(가장 흔함). 출처: Wikimedia Commons, Glenlarson, CC BY-SA 3.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/anterolateral-stemi.jpg",
+        alt: "실제 12-lead ECG - 전측벽 STEMI",
+        caption:
+          "**전측벽(Anterolateral) STEMI 실제 심전도.** 전벽(V1-V4) + 측벽(I, aVL, V5-V6) ST↑ 패턴. LAD·LCx 병변 범위가 넓을 때. 출처: Wikimedia Commons, James Heilman MD, CC BY-SA 3.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/inferior-rv-stemi.jpg",
+        alt: "실제 12-lead ECG - 하벽 + 우심실 STEMI",
+        caption:
+          "**하벽 + 우심실(RV) STEMI 실제 심전도.** 하벽 ST↑와 함께 **V4R** 확인이 필요합니다 — RV MI면 니트로·이뇨제 신중, 수액 우선. 출처: Wikimedia Commons, James Heilman MD, CC BY-SA 4.0.",
+      },
+      {
+        src: "/images/ep/mi-ecg/posterior-stemi.jpg",
+        alt: "실제 ECG - 후벽 STEMI (전흉 ST depression, 뒤집어 본 후벽 ST elevation)",
+        caption:
+          "**후벽 STEMI 실제 심전도.** 전흉 V1-V3에서는 **ST depression + tall R** 로만 보이는 경우가 많습니다. ECG를 뒤집으면 후벽 **ST elevation** 이 드러납니다. 확정은 **V7-V9** 유도. 출처: Wikimedia Commons / LITFL, CC BY-SA 3.0.",
       },
     ],
     imagesTitle: "심전도",
-    imagesSubtitle: "부위별 ST↑ 패턴 · 12-lead 예시",
+    imagesSubtitle: "부위별 리드 매핑 · 관상동맥 · 실제 12-lead ECG",
     measurementSteps: [
       "【STEMI 진단 기준(요약)】 **2개 이상 인접 유도**에서 ST↑ **≥1 mm**(흉유도) · **V2-V3**는 성별·나이별 기준(남 <40세 2.5mm, ≥40세 2mm, 여 1.5mm) · **새로운 LBBB** = STEMI equivalent(동등 소견) · **후벽**은 V7-V9 ST↑로 확정",
       "【전벽 Anterior STEMI】 **ST↑ V1, V2, V3, V4**(2개 이상 연속) · **역변화(reciprocal)**: 하벽(II,III,aVF) ST↓ · **Q파** 나중에 V1-V4 · **의심 혈관: LAD** · 임상: 전심실 기능 저하·심부전·killip 높음 가능",
@@ -271,6 +319,97 @@ export const epTopics: KnowledgeArticle[] = [
       "TnT ACS Interpretation",
     ],
     tags: ["EP", "심전도", "STEMI", "MI", "12-lead", "조영실"],
+  },
+  {
+    slug: "pacemaker-modes",
+    title: "페이스메이커 모드",
+    englishName: "Pacemaker Modes (NBG Code)",
+    koreanName: "심장박동기 모드 정리 — VVI · DDD · AAI 등",
+    summary:
+      "NBG 코드 3~5자리로 페이싱·센싱·반응을 읽는 법 — VVI, AAI, DDD, DDDR 등 임상에서 쓰는 모드와 적응증·심전도 소견",
+    summaryEn:
+      "NBG pacemaker nomenclature — how to read pacing, sensing, and response letters; common modes (VVI, AAI, DDD, DDDR) with indications and ECG clues.",
+    definition: [
+      "페이스메이커(PPM, permanent pacemaker) 모드는 **NBG 코드**(North American Society of Pacing and Electrophysiology / BPEG / NASPE)로 표기합니다. 보통 **3~4글자**(때로 5글자)로 **무엇을 박동(pace)·무엇을 감지(sense)·어떻게 반응(response)** 하는지 나타냅니다.",
+      "**읽는 법(앞 3자리가 핵심)** ① **1번째 = Pacing(박동하는 챔버)**: O=없음 · A=심방(Atrium) · V=심실(Ventricle) · D=Dual(심방+심실) ② **2번째 = Sensing(감지하는 챔버)**: O · A · V · D ③ **3번째 = Response(감지 후 반응)**: O=반응 없음 · T=Triggered(감지 시 즉시 박동 유발) · I=Inhibited(자발 박동 있으면 박동 억제) · D=Dual(T+I 둘 다 — 심방·심실 각각 다르게) ④ **4번째(선택) = Rate modulation**: O=없음 · R=Rate-responsive(활동·호흡에 따라 빈도 조절) ⑤ **5번째(선택) = Multisite**: 양심실·CRT 등 — 임상에서 자주 생략",
+      "**한마디 예시**: **VVI** = 심실만 박동·심실만 감지·자발 심실 박동 있으면 **억제(inhibit)** → '심실만 단독으로 도는 모드'. **DDD** = 심방·심실 모두 박동·감지·**이중 반응** → 심방 자발 박동 있으면 심방 박동 억제, 심실 자발 박동 있으면 심실 박동 억제, **AV 동기화** 유지.",
+      "조영실·CCU·병동에서 환자 팔찌·차트·디바이스 카드에 **VVI 60**, **DDD 60/130** 처럼 적혀 있습니다. **60** = 하한 빈도(lower rate, bpm) · **130** = 상한 추적 빈도(upper tracking rate) — DDD에서 심방이 빨라지면 심실도 따라가되 이 값까지만.",
+      "심전도에서 **페이싱 spike(수직 날카로운 선)** 가 보이면 인공 박동입니다. **심방 spike + P파**, **심실 spike + QRS** 순서로 나오면 DDD 정상 동작. **Spike만 있고 P/QRS 없으면 failure to capture** · **자발 QRS 있는데 spike도 겹치면 fusion/capture 확인** 필요.",
+      "한마디로, **'NBG 글자 = 어디를 얼마나 똑똑하게 박동시키는지'** — 모드를 알면 환자 리듬·증상·MRI/시술 주의까지 이어집니다.",
+    ],
+    images: [
+      {
+        src: "/images/ep/pacemaker/ppm-lead-placement.png",
+        alt: "심장박동기 lead 위치 - 우심방·우심실 전극",
+        caption:
+          "**PPM lead 위치.** 우심방(RA) lead — 심방 appendage 방향 J-loop · 우심실(RV) lead — RV apex(또는 septal). **심방+심실 lead** = dual-chamber(DDD 등) · **심실 lead만** = single-chamber(VVI 등). 출처: Wikimedia Commons, Npatchett, CC BY-SA 4.0.",
+      },
+      {
+        src: "/images/ep/pacemaker/dual-chamber-pacemaker-xray.jpg",
+        alt: "이심실 pacemaker 흉부 X-ray - RA J-loop, RV apex lead",
+        caption:
+          "**Dual-chamber PPM 흉부 X-ray.** 흰색 화살표 = **RA lead tip**(우심이 appendage) · 검은 화살표 = **RV lead tip**(우심실 apex). 시술·입원 시 lead 위치 이탈·탈구 여부 확인에 사용. 출처: Wikimedia Commons, Case courtesy of Dr Hani Salam, CC BY-SA 3.0.",
+      },
+    ],
+    imagesTitle: "장치·lead",
+    imagesSubtitle: "전극 위치 · 흉부 X-ray",
+    measurementSteps: [
+      "【NBG 코드 빠른 해석】 1번째=Pace · 2번째=Sense · 3번째=Response(I/T/D) · 4번째=R(있으면 rate-responsive) · 예: **DDDR** = dual pace + dual sense + dual response + rate modulation",
+      "【VVI】 Pace **V** · Sense **V** · **I**(inhibit) · 심실만 박동, 심실 자발 리듬 있으면 억제 · **적응**: **AF + 느린 심실반응**, 고령, 단순 서맥, 심실 단독 lead만 있는 경우 · **장점**: 단순·AF에서 빠른 심실 추적 없음 · **단점**: **AV dissociation** — 심방·심실 따로 뛰어 **pacemaker syndrome**(어지러움·저출량) 가능",
+      "【VVIR】 VVI + **R**(rate-responsive) · 활동·호흡 센서로 심박 조절 · 낮 활동 시 저빈도·운동 시 빈도↑ · AF + 서맥 환자에서 가장 흔한 실전 모드 중 하나",
+      "【AAI】 Pace **A** · Sense **A** · **I** · 심방만 박동·감지 · **적응**: **정상 AV 전도** 있는 **동방결절병(Sick sinus syndrome)** — 서맥·sinus arrest, AF 없음 · **장점**: 생리적(본인 심실 수축 유지) · **단점**: **AV block 생기면** 박동 못 함 → DDD로 전환 필요",
+      "【AAIR】 AAI + rate-responsive",
+      "【DDD】 Pace **D** · Sense **D** · **D**(dual response) · 심방·심실 모두 박동·감지 · **심방 자발 → 심방 inhibit** · **심실 자발 → 심실 inhibit** · **심방 박동 후 일정 AV delay 뒤 심실 박동** → **AV synchrony** · **적응**: **SSS + AV block**, **고도 AV block**, 대부분의 **dual-chamber PPM** · **설정 예**: lower 60 / upper tracking 130 bpm",
+      "【DDDR】 DDD + rate-responsive · SSS·AV block에서 **가장 흔한 장기 모드**",
+      "【DDI】 Pace D · Sense D · **I only**(trigger 없음) · 심방 빨라져도 **심실 추적 안 함** · **적응**: **AF + PPM** 인데 빠른 ventricular pacing 피할 때(구형) · 요즘은 **VVI/VVIR** 로 대체하는 경우 많음",
+      "【VDD】 Pace **V** only · Sense **D** · **I** · **심실 lead 1개**만 있고 심방은 **감지만**(floating dipole 등) · 심방 자발 있으면 AV delay 맞춰 심실 pacing · lead 1개로 DDD와 비슷한 효과",
+      "【AOO / VOO / DOO】 **비동기(asynchronous) pacing** — sensing 무시, 고정 빈도 박동 · **마그넷 적용 시** 임시 모드 · 수술실·MRI 전 점검 · **위험**: 자발 QRS와 **competition pacing** → **VT/VF 위험**(드묾, 마그넷 시에만 단기)",
+      "【CRT-P / CRT-D】 **양심실(Biventricular) pacing** — RV + **LV lead(CS)** · 모드 표기는 보통 **DDDR** 기반 + CRT · **적응**: **HFrEF + LBBB + QRS≥130ms**(가이드라인 기준 참고) · 목적: **심실 역동기(resynchrony)**",
+      "【ICD 모드】 **VVI/VVIR** (심실 pacing 위주) 또는 **DDD/DDDR** (dual-chamber ICD) · **텔레메트리·shock** 기능은 별도 — 모드 읽는 법은 PPM과 동일",
+      "【심전도에서 볼 것】 ① **Pacing spike** — 얇고 날카로운 수직선 ② **Capture** — spike 직후 P파 또는 QRS ③ **Failure to capture** — spike만 있고 P/QRS 없음 ④ **Failure to sense** — 자발 박동 있는데 spike가 겹침(undersensing) ⑤ **Pacemaker-mediated tachycardia(PMT)** — DDD에서 retrograde conduction 등으로 빈맥",
+      "【임상 선택 요약】 SSS + 정상 AV → **AAI/AAIR** 또는 **DDD** · AV block → **DDD/DDDR** · AF + slow VR → **VVI/VVIR** · HFrEF + LBBB → **CRT(DDDR+BiV)**",
+      "【조영실·시술 주의】 **전기 수술기(electrocautery)** → sensing 오류·inhibit 가능 — **마그넷** 또는 bipolar·짧은 burst 사용(기관·EP팀) · **MRI** — MR-conditional 기기만 조건부 허용 · **LHC/PCI** — lead 손상 주의, **우측 또는 좌측** 접근 lead 위치 확인",
+    ],
+    stepsTitle: "모드별 정리",
+    stepsSubtitle: "NBG 코드 · 적응증 · 심전도 · 주의",
+    clinicalUse:
+      "EP 클리닉·CCU·조영실·응급실에서 PPM/ICD/CRT 환자를 만날 때 가장 먼저 확인하는 정보가 **모드·하한/상한 빈도·lead 종류**입니다. 환자가 어지럽고 VVI인데 AF가 있으면 AV dissociation을, 서맥인데 DDD인데 capture failure를 의심합니다. AF 카디오버전·PCI·MRI·수술 전에는 반드시 **기기 종류·모드·마지막 interrogation 일자**를 확인합니다. Cath Lab에서는 lead가 있는 쪽 팔/쇄골하 접근 여부, electrocautery 사용 시 EP 담당자와 협의가 필요합니다.",
+    nursingCare: {
+      pre: [
+        "PPM/ICD/CRT 여부·제조사·모드(VVI, DDD 등)·마지막 검사(interrogation) 일자 확인",
+        "lower/upper rate, battery 상태(가능 시) 확인",
+        "lead 종류: single(RV only) vs dual(RA+RV) vs CRT(+LV)",
+        "MRI·electrocautery·defibrillation 예정 여부 → EP/기술자 협의",
+        "접근 쪽 팔 수술·혈압 cuff·IV 우선 부위(반대쪽) 확인",
+      ],
+      post: [
+        "심전도: pacing spike, capture, fusion, failure to capture/sense 기록",
+        "어지러움·저혈압·실신 — pacemaker syndrome(VVI+AV dissociation) 의심 보고",
+        "빈맥 — PMT, AF with rapid pacing, device malfunction 감별",
+        "시술 후 lead 탈구 증상(흉통, syncope, capture loss) 모니터",
+        "마그넷 적용 여부·시간·모드 변화 기록",
+        "퇴원 시 wallet card(모드·제조사·24h 연락처) 확인",
+      ],
+    },
+    keyPoints: [
+      "NBG: 1=Pace · 2=Sense · 3=Response(I/T/D) · 4=R(rate)",
+      "VVI = 심실만·억제 — AF+느린 VR에 흔함",
+      "DDD/DDDR = AV 동기화 — SSS·AV block 표준",
+      "AAI = 심방만 — 정상 AV + sinus node disease",
+      "Spike + P/QRS = capture · Spike만 = failure to capture",
+      "마그넷 → AOO/VOO/DOO 비동기 모드",
+      "CRT = DDDR + LV lead (양심실 pacing)",
+    ],
+    relatedItems: [
+      "Pacemaker",
+      "ICD",
+      "CRT",
+      "AV Block",
+      "Sick Sinus Syndrome",
+      "Atrial Fibrillation",
+      "Cardioversion",
+    ],
+    tags: ["EP", "페이스메이커", "PPM", "DDD", "VVI", "NBG", "CRT", "ICD"],
   },
 ];
 

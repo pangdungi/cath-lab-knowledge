@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img">
+  <rect width="600" height="200" fill="#f8fafc"/>
+  <text x="20" y="32" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">마무리</text>
+  <text x="20" y="80" font-family="Arial,sans-serif" font-size="11" fill="#334155">접근 부위 출혈 처리 (ProGlide 등)</text>
+  <text x="20" y="105" font-family="Arial,sans-serif" font-size="11" fill="#334155">발 말초혈류 확인 → 회복실/ICU</text>
+  <text x="20" y="130" font-family="Arial,sans-serif" font-size="11" fill="#334155">항혈전 처방 · 추적 심초음파</text>
+</svg>

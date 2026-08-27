@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" role="img" aria-label="최종 확인">
+  <rect width="700" height="280" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">10단계 — 최종 확인 &amp; 마무리</text>
+  <path d="M120 170 C280 155 420 155 560 170" stroke="#1d4ed8" stroke-width="8" fill="none"/>
+  <ellipse cx="350" cy="160" rx="14" ry="22" fill="#fff" stroke="#0f766e" stroke-width="4"/>
+  <text x="310" y="210" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0f766e">Reducer 위치 OK</text>
+  <rect x="80" y="220" width="540" height="45" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="100" y="248" font-family="Arial,sans-serif" font-size="11" fill="#065f46">천공·이탈·migration 없으면 sheath 제거 · DAPT 1개월 · 효과는 1~3개월 후</text>
+</svg>

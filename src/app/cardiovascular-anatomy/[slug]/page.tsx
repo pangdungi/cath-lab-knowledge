@@ -29,14 +29,14 @@ export default async function CardiovascularAnatomyDetailPage({
       <Breadcrumb
         items={[
           { label: "메인", href: "/" },
-          { label: "심혈관 해부학", href: "/cardiovascular-anatomy" },
+          { label: "심혈관 해부생리학", href: "/cardiovascular-anatomy" },
           { label: item.title },
         ]}
       />
 
       <KnowledgeArticleDetail
         article={item}
-        categoryLabel="심혈관 해부학"
+        categoryLabel="심혈관 해부생리학"
       />
     </div>
   );

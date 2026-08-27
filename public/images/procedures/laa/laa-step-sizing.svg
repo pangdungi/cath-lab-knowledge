@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="LAA l0 !">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">4��  LAA p � TEE sizing</text>
+  <path d="M280 100 Q400 80 480 150 Q450 220 300 190 Z" fill="#fed7aa" stroke="#f97316" stroke-width="2"/>
+  <line x1="300" y1="130" x2="460" y2="130" stroke="#22c55e" stroke-width="2"/>
+  <text x="380" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#15803d">ostium width</text>
+  <line x1="400" y1="130" x2="400" y2="200" stroke="#3b82f6" stroke-width="2"/>
+  <text x="420" y="170" font-family="Arial,sans-serif" font-size="10" fill="#1d4ed8">depth</text>
+  <text x="350" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#334155">0��l0  � (: Watchman 21~35 mm)</text>
+</svg>

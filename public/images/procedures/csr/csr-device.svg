@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" role="img" aria-label="Reducer 장치 모양">
+  <rect width="700" height="280" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">Reducer 장치 — 모래시계 모양 스텐트</text>
+  <rect x="80" y="90" width="200" height="120" rx="60" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <ellipse cx="180" cy="150" rx="35" ry="22" fill="#fff" stroke="#1d4ed8" stroke-width="4"/>
+  <text x="130" y="230" font-family="Arial,sans-serif" font-size="11" fill="#334155">CS 안에 들어가는 부분</text>
+  <text x="130" y="248" font-family="Arial,sans-serif" font-size="10" fill="#64748b">가운데(목) 3mm · 양끝 7~13mm로 팽창</text>
+  <rect x="380" y="70" width="280" height="170" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="400" y="100" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#0f172a">쉽게 말하면</text>
+  <text x="400" y="125" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 스테인리스 스틸 메쉬</text>
+  <text x="400" y="148" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 풍선으로 펼쳐서 CS에 고정</text>
+  <text x="400" y="171" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 1~3개월 뒤 조직이 덮이면서</text>
+  <text x="416" y="190" font-family="Arial,sans-serif" font-size="11" fill="#334155">좁아진 상태가 유지됨</text>
+  <text x="400" y="220" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0f766e">경정맥(목)으로 넣는 시술</text>
+</svg>

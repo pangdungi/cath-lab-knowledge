@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img">
+  <rect width="600" height="240" fill="#f8fafc"/>
+  <text x="20" y="32" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">BAV + Rapid Pacing</text>
+  <text x="20" y="58" font-family="Arial,sans-serif" font-size="11" fill="#64748b">pacing 180~220 bpm → BP↓ → 풍선 팽창/deploy</text>
+  <rect x="40" y="90" width="520" height="50" rx="6" fill="#fef3c7" stroke="#fcd34d"/>
+  <text x="60" y="120" font-family="Arial,sans-serif" font-size="11" fill="#92400e">Pacing ON → Deploy → Pacing OFF (10~15초)</text>
+  <text x="60" y="175" font-family="Arial,sans-serif" font-size="11" fill="#334155">심장이 거의 안 뛰는 동안 판막을 정확히 펼침</text>
+</svg>

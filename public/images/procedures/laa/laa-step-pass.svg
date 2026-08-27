@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="LAA PASS criteria">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">6��  TEE PASS Ux � Release</text>
+  <rect x="60" y="70" width="580" height="150" rx="10" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="80" y="105" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#15803d">PASS (Watchman)</text>
+  <text x="80" y="130" font-family="Arial,sans-serif" font-size="11" fill="#334155">P  Position (� X)</text>
+  <text x="80" y="153" font-family="Arial,sans-serif" font-size="11" fill="#334155">A  Anchor (�)</text>
+  <text x="300" y="130" font-family="Arial,sans-serif" font-size="11" fill="#334155">S  Size (l0�compression)</text>
+  <text x="300" y="153" font-family="Arial,sans-serif" font-size="11" fill="#334155">S  Seal (� &lt;5 mm)</text>
+  <text x="80" y="190" font-family="Arial,sans-serif" font-size="11" fill="#334155">+ peridevice leak � LAA occlusion %</text>
+</svg>

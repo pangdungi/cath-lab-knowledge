@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="조영실 동맥 접근 부위 - 요골과 대퇴">
+  <rect width="720" height="320" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#0f172a">조영실에서 자주 쓰는 동맥 접근</text>
+  <rect x="30" y="50" width="310" height="250" rx="10" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="50" y="78" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">팔 — 요골동맥 Radial</text>
+  <text x="50" y="105" font-family="Arial,sans-serif" font-size="10" fill="#334155">상완동맥 → 요골동맥 · 천지동맥</text>
+  <text x="50" y="125" font-family="Arial,sans-serif" font-size="10" fill="#334155">puncture: 손목 위 2~3 cm (요골 styloid)</text>
+  <text x="50" y="145" font-family="Arial,sans-serif" font-size="10" fill="#334155">시술: LHC · PCI · DES · IVUS 등</text>
+  <text x="50" y="165" font-family="Arial,sans-serif" font-size="10" fill="#334155">확인: Allen test · 손 말초혈류</text>
+  <rect x="370" y="50" width="320" height="250" rx="10" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="390" y="78" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">다리 — 대퇴동맥 Femoral</text>
+  <text x="390" y="105" font-family="Arial,sans-serif" font-size="10" fill="#334155">외장장골 → 대퇴동맥 → 굴곡동맥</text>
+  <text x="390" y="125" font-family="Arial,sans-serif" font-size="10" fill="#334155">puncture: groin, femoral triangle</text>
+  <text x="390" y="145" font-family="Arial,sans-serif" font-size="10" fill="#334155">시술: PCI · TAVR · EVAR · transseptal</text>
+  <text x="390" y="165" font-family="Arial,sans-serif" font-size="10" fill="#334155">확인: 발 말초혈류 · sheath 제거 전 ACT</text>
+</svg>

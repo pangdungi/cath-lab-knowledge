@@ -7,7 +7,16 @@ import { medications } from "@/data/medications";
 import { nursingTopics } from "@/data/nursing-topics";
 import { procedures } from "@/data/procedures";
 import { testInterpretations } from "@/data/test-interpretations";
-import type { KnowledgeArticle } from "@/types/knowledge-article";
+import type { ArticleStep, KnowledgeArticle } from "@/types/knowledge-article";
+
+function stepToSearchText(step: string | ArticleStep): string {
+  if (typeof step === "string") return step;
+  return joinParts([
+    step.text,
+    step.image?.alt,
+    step.image?.caption,
+  ]);
+}
 import type { MedicalTerm } from "@/types/medical-term";
 import type { SearchItem, SearchResult } from "@/types/search-item";
 
@@ -38,10 +47,20 @@ function articleToSearchItem(
       article.summaryEn,
       ...article.definition,
       ...(article.images ?? []).map((image) => joinParts([image.alt, image.caption])),
-      ...article.measurementSteps ?? [],
+      ...(article.videos ?? []).flatMap((video) => [
+        video.title,
+        video.caption,
+      ]),
+      ...(article.measurementSteps ?? []).map(stepToSearchText),
       article.clinicalUse,
       ...(article.nursingCare?.pre ?? []),
       ...(article.nursingCare?.post ?? []),
+      ...(article.tables ?? []).flatMap((table) => [
+        table.title,
+        table.subtitle,
+        ...table.columns,
+        ...table.rows.flat(),
+      ]),
       ...article.keyPoints,
       ...(article.relatedItems ?? []),
       ...article.tags,
@@ -123,7 +142,7 @@ function buildSearchIndex(): IndexedItem[] {
       articleToSearchItem(
         item,
         "cardiovascular-anatomy",
-        "심혈관 해부학",
+        "심혈관 해부생리학",
         "/cardiovascular-anatomy",
       ),
     ),

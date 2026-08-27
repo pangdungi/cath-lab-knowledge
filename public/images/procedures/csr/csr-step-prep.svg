@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="시술 전 준비">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">1단계 — 시술 전 준비</text>
+  <rect x="40" y="60" width="300" height="170" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="60" y="90" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#0f172a">환자 선별</text>
+  <text x="60" y="115" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ 난치성 협심증 (약 최대인데도 흉통)</text>
+  <text x="60" y="138" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ PCI/CABG 더 못 한다고 판단</text>
+  <text x="60" y="161" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ 허혈 검사로 객관적 증거</text>
+  <text x="60" y="190" font-family="Arial,sans-serif" font-size="11" fill="#334155">✓ DAPT: 아스피린 72h+ + P2Y12</text>
+  <rect x="370" y="60" width="300" height="170" rx="10" fill="#fef3c7" stroke="#fcd34d"/>
+  <text x="390" y="90" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#92400e">하면 안 되는 경우</text>
+  <text x="390" y="115" font-family="Arial,sans-serif" font-size="11" fill="#78350f">✗ CS 안에 양심실 pacing lead</text>
+  <text x="390" y="138" font-family="Arial,sans-serif" font-size="11" fill="#78350f">✗ 심한 심부전 (LVEF 매우 낮음)</text>
+  <text x="390" y="161" font-family="Arial,sans-serif" font-size="11" fill="#78350f">✗ 최근 3개월 내 PCI/CABG</text>
+  <text x="390" y="190" font-family="Arial,sans-serif" font-size="11" fill="#78350f">✗ RCA만 허혈 / 허혈 증거 없는 흉통</text>
+</svg>

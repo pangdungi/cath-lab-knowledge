@@ -1,5 +1,13 @@
 import { FormattedText } from "@/components/FormattedText";
-import type { KnowledgeArticle } from "@/types/knowledge-article";
+import type { ArticleStep, KnowledgeArticle } from "@/types/knowledge-article";
+
+function getStepText(step: string | ArticleStep): string {
+  return typeof step === "string" ? step : step.text;
+}
+
+function getStepImage(step: string | ArticleStep) {
+  return typeof step === "string" ? undefined : step.image;
+}
 
 type KnowledgeArticleDetailProps = {
   article: KnowledgeArticle;
@@ -68,6 +76,104 @@ export function KnowledgeArticleDetail({
         </div>
       </section>
 
+      {article.tables && article.tables.length > 0 && (
+        <section className="mb-8">
+          {article.tables.map((table) => (
+            <div key={table.title ?? table.columns.join("-")} className="mb-6">
+              {table.title && (
+                <h2 className="mb-1 text-lg font-semibold text-slate-900">
+                  {table.title}
+                </h2>
+              )}
+              {table.subtitle && (
+                <p className="mb-4 text-sm text-slate-500">{table.subtitle}</p>
+              )}
+              <div className="overflow-x-auto rounded-xl border border-slate-200">
+                <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-200 bg-slate-50">
+                      {table.columns.map((column) => (
+                        <th
+                          key={column}
+                          className="px-4 py-3 font-semibold text-slate-800"
+                        >
+                          {column}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row, rowIndex) => (
+                      <tr
+                        key={rowIndex}
+                        className="border-b border-slate-100 last:border-b-0 even:bg-slate-50/50"
+                      >
+                        {row.map((cell, cellIndex) => (
+                          <td
+                            key={cellIndex}
+                            className="px-4 py-3 align-top leading-6 text-slate-700"
+                          >
+                            <FormattedText>{cell}</FormattedText>
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {article.videos && article.videos.length > 0 && (
+        <section className="mb-8">
+          <h2 className="mb-1 text-lg font-semibold text-slate-900">
+            {article.videosTitle ?? "참고 영상"}
+          </h2>
+          <p className="mb-4 text-sm text-slate-500">
+            {article.videosSubtitle ?? "영상으로 이해하기"}
+          </p>
+          <div className="space-y-6">
+            {article.videos.map((video) => (
+              <figure
+                key={video.youtubeId}
+                className="overflow-hidden rounded-xl border border-slate-200 bg-white"
+              >
+                <div className="aspect-video w-full bg-slate-900">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    className="h-full w-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+                <figcaption className="border-t border-slate-100 px-4 py-3 text-sm leading-6 text-slate-600">
+                  <p className="font-medium text-slate-800">{video.title}</p>
+                  {video.caption && (
+                    <p className="mt-1">
+                      <FormattedText>{video.caption}</FormattedText>
+                    </p>
+                  )}
+                  {video.sourceUrl && (
+                    <a
+                      href={video.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-teal-700 hover:underline"
+                    >
+                      YouTube에서 보기
+                    </a>
+                  )}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
+
       {article.images && article.images.length > 0 && (
         <section className="mb-8">
           <h2 className="mb-1 text-lg font-semibold text-slate-900">
@@ -107,19 +213,39 @@ export function KnowledgeArticleDetail({
             {article.stepsSubtitle ?? "단계별로 따라하기"}
           </p>
           <ol className="space-y-4">
-            {article.measurementSteps.map((step, index) => (
-              <li
-                key={step}
-                className="flex gap-4 rounded-xl border border-slate-200 bg-white px-4 py-4"
-              >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-700 text-sm font-bold text-white">
-                  {index + 1}
-                </span>
-                <p className="pt-1 text-base leading-7 text-slate-700">
-                  <FormattedText>{step}</FormattedText>
-                </p>
-              </li>
-            ))}
+            {article.measurementSteps.map((step, index) => {
+              const text = getStepText(step);
+              const image = getStepImage(step);
+              return (
+                <li
+                  key={`${index}-${text.slice(0, 40)}`}
+                  className="rounded-xl border border-slate-200 bg-white px-4 py-4"
+                >
+                  <div className="flex gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-700 text-sm font-bold text-white">
+                      {index + 1}
+                    </span>
+                    <p className="pt-1 text-base leading-7 text-slate-700">
+                      <FormattedText>{text}</FormattedText>
+                    </p>
+                  </div>
+                  {image && (
+                    <figure className="mt-4 overflow-hidden rounded-lg border border-slate-100">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full bg-slate-50"
+                      />
+                      {image.caption && (
+                        <figcaption className="border-t border-slate-100 px-3 py-2 text-sm leading-6 text-slate-600">
+                          <FormattedText>{image.caption}</FormattedText>
+                        </figcaption>
+                      )}
+                    </figure>
+                  )}
+                </li>
+              );
+            })}
           </ol>
         </section>
       )}

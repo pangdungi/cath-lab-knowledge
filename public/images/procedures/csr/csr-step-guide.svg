@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-label="9Fr guide 교환">
+  <rect width="700" height="260" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0f172a">6~7단계 — 9 Fr guide + Reducer 전달</text>
+  <path d="M80 140 L620 140" stroke="#64748b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M200 140 L500 140" stroke="#1d4ed8" stroke-width="6"/>
+  <rect x="300" y="125" width="80" height="30" rx="6" fill="#fef08a" stroke="#ca8a04"/>
+  <text x="310" y="145" font-family="Arial,sans-serif" font-size="10" fill="#92400e">Reducer</text>
+  <rect x="400" y="60" width="260" height="170" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="420" y="90" font-family="Arial,sans-serif" font-size="11" fill="#334155">· 9 Fr straight guide로 교환</text>
+  <text x="420" y="115" font-family="Arial,sans-serif" font-size="11" fill="#334155">· Reducer+풍선을 wire 위로 전진</text>
+  <text x="420" y="140" font-family="Arial,sans-serif" font-size="11" fill="#334155">· guide 끝에서 device 살짝 돌출</text>
+  <text x="420" y="165" font-family="Arial,sans-serif" font-size="11" fill="#334155">· venography에서 정한 위치에 맞춤</text>
+  <text x="420" y="195" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#64748b">어려우면 mother-child 기법</text>
+</svg>

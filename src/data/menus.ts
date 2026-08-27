@@ -58,8 +58,8 @@ export const menus: MenuItem[] = [
   },
   {
     id: "cardiovascular-anatomy",
-    label: "심혈관 해부학",
-    description: "관상동맥 등 심혈관 구조와 혈관명을 이미지와 함께 정리합니다.",
+    label: "심혈관 해부생리학",
+    description: "관상동맥·판막 해부학과 혈액 응고 경로, 항혈전제 작용을 이미지와 함께 정리합니다.",
     href: "/cardiovascular-anatomy",
     icon: "🫀",
     available: true,
