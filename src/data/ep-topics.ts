@@ -411,6 +411,275 @@ export const epTopics: KnowledgeArticle[] = [
     ],
     tags: ["EP", "페이스메이커", "PPM", "DDD", "VVI", "NBG", "CRT", "ICD"],
   },
+  {
+    slug: "tee-cardioversion",
+    title: "TEE-guided Cardioversion",
+    englishName: "Transesophageal Echocardiography-guided Electrical Cardioversion",
+    koreanName: "경식도 심초음파 유도 전기적 심율동전환",
+    summary:
+      "AF를 전기 충격으로 sinus로 전환 — 충격 줄 때 LAA thrombus 날아가면 stroke, 그래서 anticoag or TEE 필수",
+    summaryEn:
+      "TEE-guided cardioversion delivers synchronized electrical shock to restore sinus rhythm in AF/flutter — TEE rules out LAA thrombus when anticoagulation is uncertain.",
+    definition: [
+      "**Cardioversion** = AF·AFL 같은 빠른 atrial rhythm을 **synchronized electrical shock**으로 끊고 **sinus rhythm**으로 돌리는 시술.",
+      "**Reentry란?**: 정상은 전기가 한 방향으로 쭉 감. AF에서는 atrium 여러 곳에서 **전기가 빙글빙글 원을 그리며 계속 돔 (reentry circuit)**. 왜 빙빙 돌 수 있나? → 일부 cell은 이미 repolarize(회복)돼서 다시 자극 받을 수 있고, 일부는 아직 refractory(불응기)라 못 받음 → 이 **시간차** 때문에 전기가 끊기지 않고 계속 돎.",
+      "**Shock이 reentry를 끊는 원리**: 고에너지 shock → **atrial myocyte 전체가 동시에 depolarize** → 모든 cell이 **동시에 refractory period**에 들어감 → 전부 refractory면 **전기가 갈 곳이 없음** → reentry circuit **끊김** → 그 다음 모든 cell이 repolarize되면 → **SA node가 가장 먼저 fire** → 정상 sinus rhythm 시작.",
+      "**비유 — 운동장 술래잡기**: 애들이 운동장에서 **빙글빙글 술래잡기** 하고 있음 (= reentry). 선생님이 **\"전원 정지!!\"** 외침 (= shock) → **모두 멈춤** (= 모든 cell depolarize → 전부 refractory). 그 다음 선생님이 **\"다시 한 줄로 따라와\"** (= SA node가 먼저 fire) → **정상 대형** (= sinus rhythm).",
+      "**왜 TEE 하나**: AF 48h 이상이면 LAA에 thrombus 있을 수 있음. **Cardioversion 순간 atrium이 갑자기 squeeze → thrombus가 튕겨 나감 → stroke**. TTE로 LAA 잘 안 보임 → **TEE로 직접 LAA 들여다보고** thrombus 있는지 확인.",
+      "**Anticoag 왜 중요?**: 핵심은 **'전기충격 줄 때 thrombus 날아갈까봐'**. ① **시술 전 3~4주 anticoag** → thrombus 녹거나 단단히 붙어서 안 떨어지게(organized) ② **시술 후 4주 anticoag** → cardioversion 직후 atrium이 stunning 상태라 새 thrombus 생기기 쉬움 ③ anticoag 불충분하면 → **TEE로 thrombus 없는 거 확인**하고 시술.",
+      "**Sync 왜 중요**: T wave = **vulnerable period**. 여기서 shock 맞으면 일부 cell만 반응 → **VF 유발**. 반면 **QRS(R wave) 시점**은 ventricle이 이미 depolarizing 중(**absolute refractory**) → 어차피 다 depolarize 상태라 **안전**. Defibrillator **sync ON** → R wave 감지 → **QRS 위에** shock deliver. (VF는 QRS 없으니 sync OFF)",
+      "**한 줄 요약**: 전기로 **'전원 정지'** → 모든 reentry 끊김 → SA node가 다시 지휘 → sinus. 단, **충격 줄 때 LAA thrombus 날아가면 stroke** → 시술 전 **anticoag 충분히 or TEE로 thrombus 없는 거 확인** 필수.",
+    ],
+    images: [
+      {
+        src: "/images/ep/cardioversion/sync-marker-qrs.jpg",
+        alt: "Defibrillator sync marker on QRS",
+        caption:
+          "**Sync marker 확인.** Defibrillator 화면에서 QRS마다 **sync marker(화살표)** 찍히는 거 확인. 이 marker 위치에 shock 들어감. Marker 안 보이거나 T wave에 찍히면 **repositioning** 필요. (출처: Wikimedia, CC BY-SA 4.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/cardioversion-af-to-sinus.jpg",
+        alt: "Cardioversion ECG - AF to sinus rhythm",
+        caption:
+          "**Cardioversion 성공 ECG.** AF rhythm → shock artifact → **sinus rhythm 회복**. P wave 다시 보이고 regular rhythm. (출처: CardioNetworks ECGpedia, CC BY-SA 3.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/cardioversion-principle.svg",
+        alt: "Cardioversion 원리 - atrium 전체 depolarize → SA node restart",
+        caption:
+          "**원리.** AF 중 atrium 여러 곳에서 reentry 돌고 있음 → synchronized shock → 모든 myocyte 한꺼번에 depolarize → reentry 끊김 → SA node가 먼저 fire → sinus rhythm.",
+      },
+      {
+        src: "/images/ep/cardioversion/heart-position-thorax.jpg",
+        alt: "Heart position in thorax",
+        caption:
+          "**심장 위치.** Heart는 chest 중앙에서 **왼쪽으로 치우침** (2/3가 midline 왼쪽). Pad 위치 정할 때 이 위치 고려 — current가 heart를 지나가야 효과적. (출처: Anatomy & Physiology, CC BY 3.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/electrode-position-current-flow.jpg",
+        alt: "AP vs AL electrode position with current flow",
+        caption:
+          "**AP vs AL 전류 흐름 비교.** 왼쪽: **AL position** — Rt. clavicle → Lt. axillary, 전류가 chest **가로로** 지나감. 오른쪽: **AP position** — Anterior → Posterior, 전류가 heart를 **앞뒤로 직접 관통**. Heart 위치(빨간색) 보면 **AP가 heart를 더 많이 통과**함. (출처: Wikimedia, CC BY-SA 3.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/electrode-position-comparison.svg",
+        alt: "Defibrillation electrode position diagram",
+        caption:
+          "**Pad 위치 비교.** AL: 오른쪽 위 + 왼쪽 옆 (AED 표준). AP: 앞 + 뒤. AF cardioversion에서는 **AP가 atrium에 전류 더 잘 전달** → 성공률 ↑. (출처: Wikimedia, CC BY-SA 4.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/pacemaker-chest-xray.jpg",
+        alt: "Pacemaker chest X-ray",
+        caption:
+          "**PPM 환자 주의.** Lt. pectoral에 generator 보임. Pad를 **generator 위에 직접 붙이면 안 됨** — device damage·energy 흡수. ≥8cm 떨어뜨리거나 **AP position** 사용. (출처: CardioNetworks ECGpedia, CC BY-SA 3.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/pad-positions.svg",
+        alt: "Cardioversion pad 위치 - AP vs AL",
+        caption:
+          "**AP vs AL.** AP: anterior(sternum/apex) + posterior(back) — heart 앞뒤 관통, **AF에 효과적, 비만에도 좋음**. AL: Rt. clavicle + Lt. axillary — VT/VF 표준.",
+      },
+      {
+        src: "/images/ep/cardioversion/tee-diagram.svg",
+        alt: "TEE probe가 esophagus에서 heart를 보는 구조",
+        caption:
+          "**TEE 원리.** Probe가 **esophagus(식도)**에 들어감 → esophagus가 heart **바로 뒤**에 있음 → **LA(left atrium)와 LAA를 직접 visualization** 가능. TTE(경흉부)로는 chest wall·lung 때문에 LAA가 잘 안 보임. (출처: Wikimedia, CC BY 2.5)",
+      },
+      {
+        src: "/images/ep/cardioversion/heart-esophagus-relations.svg",
+        alt: "Heart와 esophagus 해부학적 관계",
+        caption:
+          "**왜 esophagus에서 잘 보이나?** Lateral view에서 보면 **esophagus가 LA 바로 뒤**를 지나감. TEE probe를 여기에 넣으면 **LA·LAA를 가장 가까이서** 볼 수 있음. (출처: Wikimedia, CC BY-SA 3.0)",
+      },
+      {
+        src: "/images/ep/cardioversion/laa-thrombus-ct.jpg",
+        alt: "LAA thrombus CT 영상",
+        caption:
+          "**LAA thrombus 실제 CT.** 좌: axial view, 우: coronal view. LAA 안에 **thrombus(혈전)** 보임. 이런 환자에게 cardioversion 하면 **thrombus가 튕겨 나가서 stroke**. (출처: Wikimedia, CC BY-SA 3.0)",
+      },
+    ],
+    imagesTitle: "Sync·Pad·PPM·TEE·LAA",
+    imagesSubtitle: "R wave sync · Pad position · PPM 피하기 · TEE가 LAA 보는 원리",
+    tables: [
+      {
+        title: "Pad Position — AP vs AL (ZOLL Guideline)",
+        subtitle: "AP가 atrium으로 current flow 최대화 → AF cardioversion에 권장",
+        columns: ["Position", "Pad 위치 (정확한 landmark)", "Current 경로", "특징"],
+        rows: [
+          [
+            "**AP (Anterior-Posterior)** ⭐권장",
+            "**Anterior**: Sternum 바로 **우측**, clavicle 아래, **4th intercostal space** | **Posterior**: Lt. scapula 아래, spine 바로 **좌측**, **T7 level**",
+            "**앞→뒤** (heart 직접 관통)",
+            "**AF 성공률 ↑** — atrium으로 current 최대 전달 · 비만도 효과적 · Posterior pad **먼저** 붙이기",
+          ],
+          [
+            "**AL (Anterior-Lateral)**",
+            "**Anterior**: Sternum 우측, clavicle 아래 | **Lateral**: Lt. mid-axillary line, **5th intercostal space** (V5~V6)",
+            "**우→좌** (chest 가로지름)",
+            "VT/VF defibrillation 표준 · AP 어려울 때 · AED 기본 위치",
+          ],
+        ],
+      },
+      {
+        title: "ZOLL Keys to Successful Cardioversion",
+        subtitle: "Cleveland Clinic Dr. Niebauer 권고",
+        columns: ["항목", "권고 사항"],
+        rows: [
+          ["**Position**", "**AP position** 사용 → atrium으로 current flow 최대화"],
+          ["**Electrode type**", "**Wet gel electrode** > solid gel — skin-gel coupling 우수"],
+          ["**Skin prep**", "**Dry**, hair 제거, lotion 없어야 함 — adhesion 영향"],
+          ["**Pad 부착 순서**", "**Posterior pad 먼저** 붙이고 → 환자 눕힌 후 anterior 붙이기 — air pocket 방지 위해 roll하듯 붙이기"],
+          ["**Sync 확인**", "**R wave에 sync** 되는지 확인 — T wave에 lock 될 수 있음 (high amplitude T wave 시)"],
+          ["**Shock 간격**", "여러 번 필요 시 **1분 rest** (ACC 권고)"],
+          ["**Pad pressure**", "어려운 환자에서 **pad 위에 pressure** 주면 거리↓ → current flow↑"],
+        ],
+      },
+      {
+        title: "Energy 선택 (Biphasic)",
+        subtitle: "환자 상태에 따라",
+        columns: ["환자", "Energy", "비고"],
+        rows: [
+          ["**Small patient / Recent onset AF**", "**75 J**", "Myocardial protection 위해 low dose 시작"],
+          ["**Routine persistent AF**", "**100-120 J**", ">90% first shock success"],
+          ["**Difficult to cardiovert (예상)**", "**200 J** (max)", "Pad에 pressure 주면서 shock"],
+          ["**AFL / SVT**", "**50-100 J**", "AF보다 낮은 energy로 conversion 가능"],
+        ],
+      },
+      {
+        title: "체중·체형별 Pad 위치 조정",
+        subtitle: "전류가 heart를 제대로 지나가게",
+        columns: ["상황", "문제", "해결"],
+        rows: [
+          [
+            "**비만 (obesity)**",
+            "피하지방 두꺼움 → AL position에서 current가 heart 못 닿을 수 있음",
+            "**AP 권장** — anterior를 sternum 한가운데 or apex, posterior를 back 한가운데(spine 옆) → heart 직접 관통",
+          ],
+          [
+            "**여성 (breast)**",
+            "Breast tissue 위에 pad → current 분산·burn",
+            "**Breast 아래** inframammary fold에 부착 or AP position",
+          ],
+          [
+            "**소아**",
+            "Chest 작아서 pad overlap 위험",
+            "**AP position** 필수 — anterior sternum, posterior back",
+          ],
+        ],
+      },
+      {
+        title: "PPM/ICD 환자 Pad 위치",
+        subtitle: "Generator 피해야 함",
+        columns: ["상황", "주의", "권장 위치"],
+        rows: [
+          [
+            "**Lt. pectoral PPM/ICD** (가장 흔함)",
+            "Generator 바로 위에 pad → device damage·energy 흡수",
+            "**AP position** 권장 — anterior pad를 sternum 우측 or apex에, generator에서 **≥8cm** 떨어뜨리기",
+          ],
+          [
+            "**Rt. pectoral PPM/ICD**",
+            "드물지만 존재",
+            "AL position 가능 — Lt. clavicle 아래 + Lt. axillary",
+          ],
+          [
+            "**시술 후**",
+            "Shock으로 device setting 변경 가능",
+            "반드시 **device interrogation** — threshold·sensing 확인",
+          ],
+        ],
+      },
+      {
+        title: "Cardioversion Indication",
+        subtitle: "주로 atrial arrhythmia — sinus rhythm 회복 목적",
+        columns: ["Arrhythmia", "설명", "Anticoag/TEE"],
+        rows: [
+          ["**AF**", "가장 흔한 indication · Sx 개선, EF 보존", "48h 이상 or onset 불명 → **TEE or anticoag 3~4주**"],
+          ["**AFL**", "regular rapid atrial flutter · 약물 불응 시", "AF와 같은 원칙"],
+          ["**AT**", "약물·vagal maneuver 실패 시", "상황별"],
+          ["**Unstable SVT (hemodynamic compromise)**", "BP↓ · mental change → **emergency cardioversion**", "응급 시 thrombus 확인 생략 가능 (benefit > risk)"],
+        ],
+      },
+      {
+        title: "Pad 부착 시 체크리스트",
+        subtitle: "Skin·Device·Environment",
+        columns: ["항목", "주의"],
+        rows: [
+          ["**Skin**", "땀·젖음 → **건조** 후 부착 · 털 많으면 shave"],
+          ["**Pad 간격**", "**≥8 cm** 간격 — sternum 위에서 overlap 안 되게"],
+          ["**Transdermal patch**", "NTG patch 등 **제거** (burn·energy loss)"],
+          ["**PPM/ICD**", "Generator 위치 **피해서** pad 부착 · AP 권장 · 시술 후 device interrogation"],
+          ["**O₂**", "고농도 O₂ mask/nasal → **제거 or 거리 두기** (fire risk)"],
+          ["**Gel pad vs Paddle**", "Gel pad 우선 · paddle 시 gel 충분히, paddle끼리 연결되면 energy 분산"],
+          ["**Sync**", "AF/AFL → **sync ON** (R wave 동기화) · VF → sync OFF"],
+        ],
+      },
+    ],
+    measurementSteps: [
+      "**왜 하나?** AF·AFL Sx(palpitation·dyspnea·fatigue) 개선, EF 보존, stroke risk 감소. 약물(rate/rhythm control) 실패 or 빠른 conversion 필요 시.",
+      "**AF에서 특히 하는 이유**: AF 지속 → **atrial remodeling** → sinus 복귀 어려워짐(\"AF begets AF\"). 조기 cardioversion → 성공률 ↑. Sx 심하거나 HFrEF·tachycardia-induced CMP 우려 시.",
+      "**Anticoag 왜 중요?** 핵심 = **전기충격 줄 때 thrombus 날아갈까봐**. AF 중 LAA에 blood 고여서 thrombus 생김 → cardioversion 순간 atrium이 squeeze → **thrombus 튕겨 나감 → stroke**. 그래서 시술 전 **3~4주 anticoag**(thrombus 녹이거나 붙여놓기) 또는 **TEE로 thrombus 없는 거 확인** 필수.",
+      "**TEE 역할**: TTE로 LAA 잘 안 보임. **TEE**는 esophagus에서 heart posterior 직접 봄 → LAA thrombus/sludge 확인. Thrombus 있으면 **연기 + anticoag 강화**.",
+      "**전기가 sinus 어떻게 만드나?** Atrium 여러 곳에서 **reentry** 돌고 있음 → high-energy shock → **모든 atrial myocyte 동시 depolarize** → 모든 circuit 끊김 → **SA node가 먼저 repolarize & fire** → sinus 시작.",
+      "**Sync 왜 R wave?**: T wave = **vulnerable period** — 여기서 shock → 일부만 반응 → **VF (R-on-T)**. 반면 **QRS 시점**은 ventricle이 이미 depolarizing 중(absolute refractory) → 안전. Defibrillator **sync ON** → 화면에 QRS마다 **marker** 찍히는 거 확인 → **R wave 위에** shock. VF는 QRS 없으니 sync OFF.",
+      "**Energy (ZOLL 권고)**: Small/recent onset → **75J**, routine persistent AF → **100-120J** (>90% 1st shock success), difficult → **200J** + pad pressure. AFL/SVT는 **50-100J**.",
+      "**Pad — AP 권장 (ZOLL)**: **Anterior**: sternum 바로 우측, clavicle 아래, **4th ICS**. **Posterior**: Lt. scapula 아래, spine 바로 좌측, **T7 level**. AP가 atrium으로 current 최대 전달 → **AF 성공률 ↑**.",
+      "**Pad 부착 순서 (ZOLL)**: **Posterior pad 먼저** → 환자 눕힌 후 anterior. Roll하듯 붙여서 **air pocket 방지**. Wet gel > solid gel.",
+      "**Pad 체크**: Skin **dry·hair 제거·lotion 없이** · pad 간격 ≥8 cm · transdermal patch 제거 · PPM/ICD 피함 · O₂ 멀리 · **sync marker가 R wave에** 찍히는지 확인.",
+      "**Sedation**: Conscious 환자 → short sedation(propofol·midazolam·fentanyl) 필요 — **airway·SpO₂·BP** continuous monitoring. Anesthesia standby.",
+      "**시술 후**: EKG로 **sinus 확인** · skin burn 점검 · sedation recovery · **anticoag 최소 4주** 유지 · AF 재발 모니터 · PPM/ICD 있으면 device interrogation.",
+    ],
+    stepsTitle: "핵심 이해",
+    stepsSubtitle: "Indication · Anticoag · Mechanism · Pad",
+    clinicalUse:
+      "EP Lab·ER·CCU·조영실 인접 recovery room에서 AF cardioversion 자주 시행. 간호사는 **anticoag 상태 확인**(마지막 복용·INR·DOAC), **TEE 결과 확인(LAA thrombus 유무)**, **sync·pad 위치·O₂ 제거**, **sedation monitoring**, **시술 후 sinus 확인·skin burn 점검·anticoag 교육**이 핵심. Emergency(hemodynamic instability) 시 thrombus 확인 없이 진행 가능하지만, elective 시에는 반드시 anticoag or TEE 거침.",
+    nursingCare: {
+      pre: [
+        "AF duration · Sx · hemodynamic status 확인",
+        "Anticoag 상태: 3~4주 INR 2~3(warfarin) 또는 DOAC 복용 확인",
+        "TEE 예정 시 NPO(보통 6시간) · 결과 확인(LAA thrombus 여부)",
+        "EKG·K·Mg·TFT 확인 · digoxin toxicity r/o",
+        "Sedation·응급약(atropine·amiodarone·lidocaine)·airway 장비 준비",
+        "PPM/ICD 여부 → **AP position** 권장 · device 팀 연락",
+        "**Skin prep**: dry, **hair shave**, lotion 제거, transdermal patch 제거",
+        "**Wet gel electrode** 준비 (solid gel보다 우수)",
+        "O₂ 사용 시 mask 제거 또는 거리 두기",
+        "**AP position 시 posterior pad 먼저** 붙일 준비",
+      ],
+      post: [
+        "EKG로 **sinus 확인** — AF 지속 시 **1분 rest 후** 재시도 또는 drug strategy Dr. 상의",
+        "Pad 부착 부위 **skin burn** 점검",
+        "Sedation recovery(의식·airway·BP·SpO₂) monitoring",
+        "Beta blocker 복용 환자 → **post-shock bradycardia** 주의 (TCP 준비)",
+        "**Anticoag 최소 4주** 유지 교육 — 임의 중단 금지",
+        "AF 재발 Sx(palpitation·irregular pulse) 시 notify",
+        "PPM/ICD 환자 → device interrogation (threshold·sensing 확인)",
+        "D/C 시 OPD F/U·INR/DOAC·Sx 교육",
+      ],
+    },
+    keyPoints: [
+      "Cardioversion = synchronized shock으로 AF/AFL → sinus (전원 정지 → SA node 재시작)",
+      "**AP position 권장** (ZOLL) — atrium으로 current flow 최대화 → 성공률 ↑",
+      "AP landmark: Anterior(sternum 우측, 4th ICS) + Posterior(Lt. scapula 아래, T7)",
+      "**Posterior pad 먼저** 붙이기 → air pocket 방지",
+      "Anticoag or TEE(LAA thrombus r/o)가 **stroke prevention** 핵심",
+      "Sync marker가 **R wave에** 찍히는지 확인 — T wave lock 주의",
+      "Energy: 75J(small) / 100-120J(routine) / 200J(difficult)",
+      "Skin: dry, hair 제거, lotion X · wet gel > solid gel",
+      "시술 후 anticoag 4주↑ · PPM/ICD → device interrogation",
+    ],
+    relatedItems: [
+      "Atrial Fibrillation",
+      "Atrial Flutter",
+      "ACLS",
+      "Anticoagulants",
+      "DOAC",
+      "TEE",
+      "LAA Closure",
+      "Pacemaker Modes",
+    ],
+    tags: ["EP", "cardioversion", "AF", "TEE", "anticoag", "LAA", "sync"],
+  },
 ];
 
 export function getEpTopicBySlug(slug: string): KnowledgeArticle | undefined {
